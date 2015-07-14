@@ -8,3 +8,4 @@ C:\Users\Admin\glowing-octo-sansa\selenium-OB\bin\Debug\ThoughtWorks.Selenium.Co
 C:\Users\Admin\glowing-octo-sansa\selenium-OB\bin\Debug\WebDriver.xml
 C:\Users\Admin\glowing-octo-sansa\selenium-OB\obj\Debug\selenium-OB.dll
 C:\Users\Admin\glowing-octo-sansa\selenium-OB\obj\Debug\selenium-OB.pdb
+C:\Users\Admin\glowing-octo-sansa\selenium-OB\obj\Debug\selenium-OB.csprojResolveAssemblyReference.cache
