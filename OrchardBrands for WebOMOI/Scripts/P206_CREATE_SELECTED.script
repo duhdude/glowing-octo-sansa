@@ -1,0 +1,13 @@
+﻿PanelUpdateEnable(0)
+HostScreenSendKey("ENTER")
+HostWaitII(10)
+PanelUpdateEnable(0)
+If ScreenIdGet() = "(77)" Then 
+	PanelUpdateEnable(0)
+	HostScreenSendKey("ENTER")
+	HostWaitII(10)
+	HostScreenSendKey("F6")
+	HostWaitII(10)
+EndIf 
+PanelUpdateEnable(2)
+End

@@ -1,0 +1,17 @@
+﻿PanelLock()
+PanelUpdateEnable(0)
+HostScreenSendKey("F3")
+HostWaitII(10)
+If Trim(@"@(MESSAGE)@") <> "" Then 
+	PanelUnlock()
+'	PanelLoadPanel("(167)")
+	Goto end_script
+EndIf 
+If ScreenIdGet() = "(151)" Then 
+	HostScreenSendKey("F8")
+	HostWaitII(10)
+EndIf 
+PanelUnlock()
+end_script: 
+PanelFieldPutFocus("TABPAGE2")
+End 

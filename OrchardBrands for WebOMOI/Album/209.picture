@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?VersionInfo version="1.1" buildnumber="7.0.171" exename="lscollector.exe" exeversion="7.0.171.0" ?>
+<header xmlns="http://www.seagullsoftware.com/schemas/legasuite/screendefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screendefinition1_1.xsd" layout_version="1.1" creation_date_time="2014-07-18T12:29:53" application="collector" application_version="7.0.171.0">
+	<screen originator="LegaSuiteCollectorAwhost" name="AW000006" library="SEADSPF   " member_name="B#R0073DF " message_line_y="24">
+		<size cx="80" cy="24"/>
+		<action key="f1" conditional="true"/>
+		<action key="enter"/>
+		<action key="print"/>
+		<field field_type="screen_part" name="#RCDDTL1  " overlay="true">
+			<area>
+				<position x="0" y="0"/>
+				<size cx="80" cy="22"/>
+			</area>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="##PGM     " display_length="10" data_length="10">
+				<area>
+					<position x="1" y="0"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" high_intensity="true" display_length="28" data_length="28" value="Credit Pre-screen Acceptance">
+				<area>
+					<position x="26" y="0"/>
+					<size cx="28" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" name="*DATE     " display_length="8" data_length="6">
+				<area>
+					<position x="62" y="0"/>
+					<size cx="8" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" name="##TME     " display_length="8" data_length="6">
+				<area>
+					<position x="71" y="0"/>
+					<size cx="8" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="#PDUTX    " display_length="30" data_length="30">
+				<area>
+					<position x="25" y="1"/>
+					<size cx="30" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#DESC1    " display_length="79" data_length="79">
+				<area>
+					<position x="0" y="3"/>
+					<size cx="79" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#DESC2    " display_length="79" data_length="79">
+				<area>
+					<position x="0" y="4"/>
+					<size cx="79" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#DESC3    " display_length="79" data_length="79">
+				<area>
+					<position x="0" y="5"/>
+					<size cx="79" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#DESC4    " display_length="79" data_length="79">
+				<area>
+					<position x="0" y="6"/>
+					<size cx="79" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#DESC5    " display_length="79" data_length="79">
+				<area>
+					<position x="0" y="7"/>
+					<size cx="79" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#DESC6    " display_length="79" data_length="79">
+				<area>
+					<position x="0" y="8"/>
+					<size cx="79" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#DESC7    " display_length="79" data_length="79">
+				<area>
+					<position x="0" y="9"/>
+					<size cx="79" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="4" data_length="4" value="SSN#">
+				<area>
+					<position x="2" y="10"/>
+					<size cx="4" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="6" data_length="6" value="XXX XX">
+				<area>
+					<position x="8" y="10"/>
+					<size cx="6" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" name="#SSN3     " display_length="4" data_length="4">
+				<area>
+					<position x="15" y="10"/>
+					<size cx="4" cy="1"/>
+				</area>
+				<color foreground="yellow"/>
+			</field>
+			<field field_type="fixed_text" display_length="3" data_length="3" value="DOB">
+				<area>
+					<position x="26" y="10"/>
+					<size cx="3" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="date" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" lowercase="true" name="#DOB      " display_length="10" data_length="10">
+				<area>
+					<position x="31" y="10"/>
+					<size cx="10" cy="1"/>
+				</area>
+				<color foreground="yellow"/>
+			</field>
+			<field field_type="fixed_text" display_length="78" data_length="78" value="------------------------------------------------------------------------------">
+				<area>
+					<position x="1" y="11"/>
+					<size cx="78" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="10" data_length="10" value="Customer :">
+				<area>
+					<position x="1" y="12"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1JYNB    " display_length="9" data_length="9">
+				<area>
+					<position x="14" y="12"/>
+					<size cx="9" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="23" data_length="23" value="PRE-SCREEN CREDIT LIMIT">
+				<area>
+					<position x="39" y="12"/>
+					<size cx="23" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1CRD$    " display_length="8" data_length="7">
+				<area>
+					<position x="64" y="12"/>
+					<size cx="8" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="10" data_length="10" value="Name . . .">
+				<area>
+					<position x="1" y="13"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#1PBCD    " display_length="3" data_length="3">
+				<area>
+					<position x="14" y="13"/>
+					<size cx="3" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#1LZTX    " display_length="15" data_length="15">
+				<area>
+					<position x="18" y="13"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#1ONCD    " display_length="1" data_length="1">
+				<area>
+					<position x="34" y="13"/>
+					<size cx="1" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#1L0TX    " display_length="25" data_length="25">
+				<area>
+					<position x="36" y="13"/>
+					<size cx="25" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#1OPCD    " display_length="3" data_length="3">
+				<area>
+					<position x="62" y="13"/>
+					<size cx="3" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="10" data_length="10" value="Street . .">
+				<area>
+					<position x="1" y="14"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#1L1TX    " display_length="32" data_length="32">
+				<area>
+					<position x="14" y="14"/>
+					<size cx="32" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="9" data_length="9" value="Apt/Suite">
+				<area>
+					<position x="49" y="14"/>
+					<size cx="9" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#1L2TX    " display_length="10" data_length="10">
+				<area>
+					<position x="59" y="14"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="10" data_length="10" value="Address  .">
+				<area>
+					<position x="1" y="15"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" name="#1L3TX    " display_length="32" data_length="32">
+				<area>
+					<position x="14" y="15"/>
+					<size cx="32" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#DZFTX    " display_length="32" data_length="32">
+				<area>
+					<position x="14" y="16"/>
+					<size cx="32" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#DZGTX    " display_length="32" data_length="32">
+				<area>
+					<position x="14" y="17"/>
+					<size cx="32" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="10" data_length="10" value="City . . .">
+				<area>
+					<position x="1" y="18"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#1L5TX    " display_length="25" data_length="25">
+				<area>
+					<position x="14" y="18"/>
+					<size cx="25" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="2" data_length="2" value="St">
+				<area>
+					<position x="40" y="18"/>
+					<size cx="2" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#1H6ST    " display_length="2" data_length="2">
+				<area>
+					<position x="43" y="18"/>
+					<size cx="2" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="8" data_length="8" value="Zip code">
+				<area>
+					<position x="46" y="18"/>
+					<size cx="8" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#1OOCD    " display_length="10" data_length="10">
+				<area>
+					<position x="55" y="18"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="7" data_length="7" value="Country">
+				<area>
+					<position x="66" y="18"/>
+					<size cx="7" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" name="#1CNCD    " display_length="3" data_length="3">
+				<area>
+					<position x="74" y="18"/>
+					<size cx="3" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="18" data_length="18" value="TELEPHONE: EVENING">
+				<area>
+					<position x="1" y="19"/>
+					<size cx="18" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="#DAVTT    " display_length="25" data_length="25">
+				<area>
+					<position x="20" y="19"/>
+					<size cx="25" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="3" data_length="3" value="DAY">
+				<area>
+					<position x="48" y="19"/>
+					<size cx="3" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="#DAUTT    " display_length="25" data_length="25">
+				<area>
+					<position x="52" y="19"/>
+					<size cx="25" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" conditional="true" high_intensity="true" reverse_image="true" display_length="41" data_length="41" value="Provide Street or Rural Route information">
+				<area>
+					<position x="19" y="21"/>
+					<size cx="41" cy="1"/>
+				</area>
+				<indicator id="80"/>
+			</field>
+			<field field_type="fixed_text" conditional="true" high_intensity="true" reverse_image="true" display_length="31" data_length="31" value="Must be Eighteen years or Older">
+				<area>
+					<position x="24" y="21"/>
+					<size cx="31" cy="1"/>
+				</area>
+				<indicator id="84"/>
+			</field>
+			<field field_type="fixed_text" conditional="true" high_intensity="true" reverse_image="true" display_length="28" data_length="28" value="Please Enter &quot;Y&quot; or &quot;N&quot;">
+				<area>
+					<position x="24" y="21"/>
+					<size cx="28" cy="1"/>
+				</area>
+				<indicator id="86"/>
+			</field>
+			<field field_type="fixed_text" conditional="true" extra_indicators="or" high_intensity="true" reverse_image="true" display_length="31" data_length="31" value="Social Security number required">
+				<area>
+					<position x="24" y="21"/>
+					<size cx="31" cy="1"/>
+				</area>
+				<indicator id="83"/>
+			</field>
+			<field field_type="fixed_text" conditional="true" high_intensity="true" reverse_image="true" display_length="28" data_length="28" value="Valid Date of Birth required">
+				<area>
+					<position x="24" y="21"/>
+					<size cx="28" cy="1"/>
+				</area>
+				<indicator id="85"/>
+			</field>
+		</field>
+		<field field_type="screen_part" name="*022/024  " overlay="true">
+			<area>
+				<position x="0" y="22"/>
+				<size cx="80" cy="2"/>
+			</area>
+			<field field_type="fixed_text" conditional="true" display_length="28" data_length="28" value="F1=Decline    Enter = Accept">
+				<area>
+					<position x="1" y="0"/>
+					<size cx="28" cy="1"/>
+				</area>
+			</field>
+			<field field_type="subfile_container">
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name=".SFLMSGREC" display_length="76" data_length="76">
+						<area>
+							<position x="1" y="1"/>
+							<size cx="76" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_end_plus" conditional="true" name=".+IND     " display_length="1" data_length="1" value="+">
+					<area>
+						<position x="78" y="1"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+			</field>
+		</field>
+	</screen>
+</header>

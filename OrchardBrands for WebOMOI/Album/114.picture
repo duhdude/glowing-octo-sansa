@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?VersionInfo version="1.1" buildnumber="7.0.181" exename="lscollector.exe" exeversion="7.0.181.0" ?>
+<header xmlns="http://www.seagullsoftware.com/schemas/legasuite/screendefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screendefinition1_1.xsd" layout_version="1.1" creation_date_time="2015-02-24T15:14:14" application="collector" application_version="7.0.181.0">
+	<screen originator="LegaSuiteCollectorAwhost" name="AW000078" library="SEADSPF   " member_name="NMK00230# " message_line_y="24">
+		<size cx="80" cy="24"/>
+		<action key="f3"/>
+		<action key="f8" conditional="true"/>
+		<action key="f9" conditional="true"/>
+		<action key="f12"/>
+		<action key="enter"/>
+		<action key="print"/>
+		<field field_type="screen_part" name="NMK00230E ">
+			<area>
+				<position x="0" y="1"/>
+				<size cx="80" cy="23"/>
+			</area>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="PGM94     " display_length="10" data_length="10">
+				<area>
+					<position x="5" y="0"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="$COMPANY  " display_length="30" data_length="30">
+				<area>
+					<position x="25" y="0"/>
+					<size cx="30" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" name="*TIME     " display_length="8" data_length="6">
+				<area>
+					<position x="68" y="0"/>
+					<size cx="8" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="9" data_length="9" value="NMK00230#">
+				<area>
+					<position x="5" y="1"/>
+					<size cx="9" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="27" data_length="27" value="Work with VIP Plus Payments">
+				<area>
+					<position x="26" y="1"/>
+					<size cx="27" cy="1"/>
+				</area>
+				<color foreground="white"/>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" name="*DATE     " display_length="8" data_length="6">
+				<area>
+					<position x="68" y="1"/>
+					<size cx="8" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" high_intensity="true" display_length="4" data_length="4">
+				<area>
+					<position x="1" y="4"/>
+					<size cx="4" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="32" data_length="32" value="Update Clarus Payment for Order:">
+				<area>
+					<position x="21" y="5"/>
+					<size cx="32" cy="1"/>
+				</area>
+				<color foreground="white"/>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" name="ORDER98   " display_length="8" data_length="8">
+				<area>
+					<position x="54" y="5"/>
+					<size cx="8" cy="1"/>
+				</area>
+				<color foreground="white"/>
+			</field>
+			<field field_type="fixed_text" display_length="9" data_length="9" value="Pay Type:">
+				<area>
+					<position x="26" y="9"/>
+					<size cx="9" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="both" high_intensity="true" position_cursor="conditional" underline="true" protected="conditional" exit_required="true" name="SCK2NB    " display_length="2" data_length="2">
+				<area>
+					<position x="36" y="9"/>
+					<size cx="2" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="6" data_length="6" value="Card#:">
+				<area>
+					<position x="26" y="11"/>
+					<size cx="6" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" position_cursor="conditional" underline="true" protected="conditional" exit_required="true" name="CARD96    " display_length="20" data_length="20">
+				<area>
+					<position x="33" y="11"/>
+					<size cx="20" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="16" data_length="16" value="Expiration Date:">
+				<area>
+					<position x="26" y="13"/>
+					<size cx="16" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="both" high_intensity="true" position_cursor="conditional" underline="true" protected="conditional" exit_required="true" name="EXPD96    " display_length="4" data_length="4">
+				<area>
+					<position x="43" y="13"/>
+					<size cx="4" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="13" data_length="13" value="Date Created:">
+				<area>
+					<position x="26" y="15"/>
+					<size cx="13" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" name="ENTD-     " display_length="10" data_length="8">
+				<area>
+					<position x="41" y="15"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="13" data_length="13" value="Time Created:">
+				<area>
+					<position x="26" y="17"/>
+					<size cx="13" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" name="ENTT-     " display_length="8" data_length="6">
+				<area>
+					<position x="41" y="17"/>
+					<size cx="8" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="13" data_length="13" value="User Created:">
+				<area>
+					<position x="26" y="19"/>
+					<size cx="13" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="USER-     " display_length="10" data_length="10">
+				<area>
+					<position x="41" y="19"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="7" data_length="7" value="F3=Exit">
+				<area>
+					<position x="3" y="21"/>
+					<size cx="7" cy="1"/>
+				</area>
+				<color foreground="white"/>
+			</field>
+			<field field_type="fixed_text" high_intensity="true" non_display="conditional" display_length="23" data_length="23" value="Enter - Process Request">
+				<area>
+					<position x="28" y="21"/>
+					<size cx="23" cy="1"/>
+				</area>
+				<color foreground="white"/>
+			</field>
+			<field field_type="fixed_text" conditional="true" blink="conditional" high_intensity="conditional" display_length="10" data_length="10" value="F8=Confirm">
+				<area>
+					<position x="55" y="21"/>
+					<size cx="10" cy="1"/>
+				</area>
+				<indicator id="41"/>
+				<indicator negative="true" id="40"/>
+			</field>
+			<field field_type="fixed_text" conditional="true" blink="conditional" high_intensity="conditional" display_length="10" data_length="10" value="F9=Confirm">
+				<area>
+					<position x="55" y="21"/>
+					<size cx="10" cy="1"/>
+				</area>
+				<indicator id="40"/>
+				<indicator negative="true" id="41"/>
+			</field>
+			<field field_type="fixed_text" display_length="10" data_length="10" value="F12=Cancel">
+				<area>
+					<position x="69" y="21"/>
+					<size cx="10" cy="1"/>
+				</area>
+				<color foreground="white"/>
+			</field>
+			<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" non_display="conditional" name="MSGFLD3   " display_length="76" data_length="76">
+				<area>
+					<position x="2" y="22"/>
+					<size cx="76" cy="1"/>
+				</area>
+				<color foreground="red"/>
+				<indicator id="93"/>
+			</field>
+		</field>
+	</screen>
+</header>

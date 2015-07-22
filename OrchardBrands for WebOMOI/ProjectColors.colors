@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2671.0.0" modelVersion="1.0" ?>
+<UserColors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="UserColors.xsd">
+   <UserColor mappable="true" name="Text Foreground1">
+      <RgbColor blue="139" green="48" red="59"/>
+   </UserColor>
+   <UserColor mappable="true" name="Entry Foreground1">
+      <RgbColor blue="115" green="115" red="114"/>
+   </UserColor>
+   <UserColor mappable="true" name="Output Foreground1">
+      <RgbColor blue="151" green="75" red="0"/>
+   </UserColor>
+   <UserColor mappable="true" name="Tab On">
+      <RgbColor blue="139" green="48" red="59"/>
+   </UserColor>
+   <UserColor mappable="true" name="Tab Off">
+      <RgbColor blue="147" green="147" red="147"/>
+   </UserColor>
+   <UserColor mappable="true" name="Button1">
+      <RgbColor blue="255" green="255" red="255"/>
+   </UserColor>
+   <UserColor mappable="true" name="Container1">
+      <RgbColor blue="255" green="255" red="255"/>
+   </UserColor>
+   <UserColor mappable="false" name="Text Background1">
+      <RgbColor blue="255" green="255" red="255"/>
+   </UserColor>
+   <UserColor mappable="false" name="Message">
+      <RgbColor blue="0" green="0" red="234"/>
+   </UserColor>
+   <UserColor mappable="false" name="Entry Border">
+      <RgbColor blue="192" green="192" red="192"/>
+   </UserColor>
+   <UserColor mappable="false" name="Entry Focus Border">
+      <RgbColor blue="60" green="60" red="60"/>
+   </UserColor>
+   <UserColor mappable="false" name="Entry Focus Foreground1">
+      <RgbColor blue="60" green="60" red="60"/>
+   </UserColor>
+   <UserColor mappable="false" name="Entry Background1">
+      <RgbColor blue="255" green="255" red="255"/>
+   </UserColor>
+   <UserColor mappable="false" name="Entry Focus Background1">
+      <RgbColor blue="250" green="250" red="250"/>
+   </UserColor>
+   <UserColor mappable="false" name="Output Background1">
+      <RgbColor blue="255" green="255" red="255"/>
+   </UserColor>
+   <UserColor mappable="false" name="Checkbox Foreground1">
+      <RgbColor blue="0" green="0" red="0"/>
+   </UserColor>
+   <UserColor mappable="false" name="Text Foreground2">
+      <RgbColor blue="0" green="0" red="0"/>
+   </UserColor>
+   <UserColor mappable="false" name="Radio Foreground1">
+      <RgbColor blue="0" green="0" red="0"/>
+   </UserColor>
+   <UserColor mappable="false" name="List Column Foreground1">
+      <RgbColor blue="0" green="0" red="0"/>
+   </UserColor>
+   <UserColor mappable="false" name="List Header Foreground1">
+      <RgbColor blue="0" green="0" red="0"/>
+   </UserColor>
+   <UserColor mappable="false" name="List Header Background1">
+      <RgbColor blue="216" green="179" red="178"/>
+   </UserColor>
+   <UserColor mappable="false" name="ListRow1">
+      <RgbColor blue="255" green="255" red="255"/>
+   </UserColor>
+   <UserColor mappable="false" name="ListRow2">
+      <RgbColor blue="250" green="244" red="245"/>
+   </UserColor>
+   <UserColor mappable="false" name="List Sel Foreground">
+      <RgbColor blue="0" green="0" red="0"/>
+   </UserColor>
+   <UserColor mappable="false" name="List Sel Background">
+      <RgbColor blue="210" green="210" red="210"/>
+   </UserColor>
+   <UserColor mappable="false" name="Popup Background">
+      <RgbColor blue="255" green="255" red="255"/>
+   </UserColor>
+   <UserColor mappable="false" name="Popup Bottom">
+      <RgbColor blue="115" green="34" red="49"/>
+   </UserColor>
+   <UserColor mappable="false" name="TabPageBackground">
+      <RgbColor blue="255" green="255" red="255"/>
+   </UserColor>
+   <UserColor mappable="false" name="Text Foreground3">
+      <RgbColor blue="147" green="147" red="147"/>
+   </UserColor>
+   <UserColor mappable="false" name="Title">
+      <RgbColor blue="255" green="255" red="255"/>
+   </UserColor>
+   <UserColor mappable="false" name="Container Border1">
+      <RgbColor blue="220" green="188" red="189"/>
+   </UserColor>
+   <UserColor mappable="false" name="ButtonBackground2">
+      <RgbColor blue="115" green="34" red="49"/>
+   </UserColor>
+   <UserColor mappable="false" name="Banner Text">
+      <RgbColor blue="0" green="0" red="0"/>
+   </UserColor>
+   <UserColor mappable="false" name="Banner Background">
+      <RgbColor blue="255" green="0" red="255"/>
+   </UserColor>
+   <UserColor mappable="false" name="Error Red">
+      <RgbColor blue="98" green="98" red="255"/>
+   </UserColor>
+   <UserColor mappable="false" name="DarkYellow">
+      <RgbColor blue="0" green="147" red="147"/>
+   </UserColor>
+   <UserColor mappable="false" name="Button Background3">
+      <RgbColor blue="0" green="128" red="255"/>
+   </UserColor>
+   <UserColor mappable="false" name="Popup Background2">
+      <RgbColor blue="183" green="255" red="255"/>
+   </UserColor>
+   <UserColor mappable="false" name="EntryBackground2">
+      <RgbColor blue="254" green="224" red="197"/>
+   </UserColor>
+   <UserColor mappable="false" name="Project color 40">
+      <RgbColor blue="0" green="0" red="0"/>
+   </UserColor>
+</UserColors>

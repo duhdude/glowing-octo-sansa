@@ -1,0 +1,48 @@
+<rule>
+	<matches>
+		<match>
+			<container id="grid" template="Grid" type="Table" hide_input_column_if_option_button_present="true">
+				<field id="option_button" min_occurrence="0">
+					<attributes>
+						<editable>false</editable>
+          			</attributes>
+          			<content>
+            			<regexp pattern="(?&lt;send_string&gt;\d+)=(?&lt;label&gt;\D+)"/>
+          			</content>
+        		</field>
+				<field id="column_header" min_occurrence="2">
+					<attributes>
+						<editable>false</editable>
+						<intensified>true</intensified>
+					</attributes>
+					<content>
+                    	<regexp pattern="^[^\.]+$"/>
+                    </content>
+				</field>     
+				<container id="row" min_occurrence="2" search_direction="vertical">
+					<field id="input_cell" min_occurrence="0" max_occurrence="1" search_direction="horizontal">
+						<attributes>
+							<editable>true</editable>
+						</attributes>
+					</field>
+					<field id="column_cell" min_occurrence="0" search_direction="horizontal">
+						<!-- Restriction is removed to allow editable cells in any place
+						<attributes>
+							<editable>false</editable>
+						</attributes>
+						-->
+					</field>
+				</container>
+				<field id="bottom_of_table" min_occurrence="0" max_occurrence="1" skip_empty="true">
+					<attributes>
+						<editable>false</editable>
+					</attributes>
+					<content>
+						<regexp pattern="(More\.\.\.|Bottom)"/>
+					</content>
+				</field>
+			</container>
+		</match>
+	</matches>
+</rule>
+

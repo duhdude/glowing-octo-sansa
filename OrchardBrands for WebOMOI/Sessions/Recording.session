@@ -1,0 +1,10 @@
+﻿#
+#Wed Mar 20 18:04:13 CDT 2013
+BidiOisReturnsLogical=1
+EmulatorSystem=localhost
+EmulatorSystemPort=23
+Emulator=SeagullXml
+EmulatorSystemUriPath=heman/OrchardBrands for Web/Screen shots
+WideScreen=1
+EmulatorConnect=TcpIp
+PanelThemesEnabled=1

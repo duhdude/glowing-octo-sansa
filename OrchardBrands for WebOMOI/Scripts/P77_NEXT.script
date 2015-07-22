@@ -1,0 +1,8 @@
+﻿PanelUpdateEnable(0)
+discamt=""
+HostScreenSendKey("F6")
+HostWaitII(5)
+shipcmplt = "N"
+giftchk="N"
+
+End 

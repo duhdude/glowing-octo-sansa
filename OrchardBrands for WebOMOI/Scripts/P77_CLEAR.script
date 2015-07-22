@@ -1,0 +1,7 @@
+﻿HostFieldPutData("#CMKTV",0,"         ")
+pcode2=""
+last2=""
+HostScreenSendKey("ENTER")
+HostWaitII(5)
+PanelUpdateEnable(0)
+End

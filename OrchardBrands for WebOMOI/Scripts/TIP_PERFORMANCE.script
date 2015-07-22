@@ -1,0 +1,97 @@
+﻿Rem
+Rem Script file
+Rem
+Option Explicit 
+Dim screen_found As String 
+OutputDebugString("START : " & Str(Time()))
+HostWaitForScreen("SIGNON", 10, screen_found)
+'Sign On
+HostFieldPutData("FLD06053", 0, "P92333")
+HostFieldPutData("FLD07053", 0, "G082014")
+HostScreenSendKey("Enter")
+'Display Program Message
+'HostScreenSendKey("Enter")
+HostWaitForScreen("(109)", 10, screen_found)
+'Menu Driver
+HostFieldPutData("#CASCD", 0, "OEOM")
+HostScreenSendKey("Enter")
+HostWaitForScreen("(134)", 10, screen_found)
+'Request Order Batch
+HostScreenSendKey("Enter")
+HostWaitForScreen("(77)", 10, screen_found)
+'Customer Selection
+HostFieldPutData("#CMKTV", 0, "9600515854")
+HostScreenSendKey("Enter")
+HostScreenSendKey("F6")
+HostWaitForScreen("(160)", 10, screen_found)
+'Work with Order
+HostScreenSendKey("F18")
+HostWaitForScreen("(144)", 10, screen_found)
+'Expand Name/Address
+HostScreenSendKey("F12")
+HostWaitForScreen("(160)", 10, screen_found)
+'Work with Order
+HostFieldPutData("#PHGCE", 0, "MSCA")
+HostScreenSendKey("Enter")
+HostScreenSendKey("Enter")
+HostWaitForScreen("(144)", 10, screen_found)
+'Expand Name/Address
+HostScreenSendKey("Enter")
+HostWaitForScreen("(160)", 10, screen_found)
+'Work with Order
+HostScreenSendKey("Enter")
+HostWaitForScreen("(139)", 10, screen_found)
+'Work with Order Lines
+HostFieldPutData("#2BECD", 0, "1234")
+HostScreenSendKey("Enter")
+HostFieldPutData("#2BECD", 0, "51719")
+HostScreenSendKey("Enter")
+HostWaitForScreen("(159)", 10, screen_found)
+'SKU Scan
+HostScreenSendKey("F11")
+HostFieldPutData("Q1", 0, "1")
+HostScreenSendKey("Enter")
+HostWaitForScreen("(100)", 10, screen_found)
+'Work with Item/SKU Comments
+HostScreenSendKey("F3")
+HostWaitForScreen("(139)", 10, screen_found)
+'Work with Order Lines
+HostScreenSendKey("F9")
+HostWaitForScreen("(179)", 10, screen_found)
+'Display Coordinate items
+HostScreenSendKey("F12")
+HostWaitForScreen("(139)", 10, screen_found)
+'Work with Order Lines
+HostScreenSendKey("F15")
+HostWaitForScreen("(170)", 10, screen_found)
+'Display Order Summary
+HostScreenSendKey("F3")
+HostWaitForScreen("(139)", 10, screen_found)
+'Work with Order Lines
+HostScreenSendKey("F9")
+HostWaitForScreen("(151)", 10, screen_found)
+'Work with Order/Recap
+HostScreenSendKey("F15")
+HostWaitForScreen("(167)", 10, screen_found)
+'Enter Payment Method
+HostFieldPutData("#2K2NB", 0, "04")
+HostFieldPutData("#2P6CD", 0, "4444333322221111")
+HostFieldPutData("#2D6DT", 0, "1115")
+HostScreenSendKey("Enter")
+HostWaitForScreen("(167)", 10, screen_found)
+'Enter Payment Method
+HostScreenSendKey("F11")
+HostWaitForScreen("(102)", 10, screen_found)
+'Confirm Reject Request
+HostScreenSendKey("Enter")
+HostWaitForScreen("(77)", 10, screen_found)
+'Customer Selection
+HostScreenSendKey("F3")
+HostWaitForScreen("(109)", 10, screen_found)
+'Menu Driver
+HostScreenSendKey("F3")
+HostScreenSendKey("Enter")
+HostWaitForScreen("SIGNON", 10, screen_found)
+'Sign On
+OutputDebugString("END   : " & Str(Time()))
+'SIGNON

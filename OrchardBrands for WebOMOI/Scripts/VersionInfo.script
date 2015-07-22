@@ -1,0 +1,71 @@
+'Process web service
+'wsdl file: C:/Seagull Projects/workspace_GUI/cardemo for Web/webservice/aspsmsx2.wsdl
+'service: ASPSMSX2
+'port: ASPSMSX2Soap
+'operation: VersionInfo
+
+Option explicit
+dim   SoapRequest as string 'this will hold the soap request
+dim   SoapReturnCode as integer
+dim   SoapTransport as string
+dim   SoapEndPointUri as string
+dim   SoapAction as string
+dim   SoapResponse as string
+dim   soap_response_error_message as string
+
+'Parameters soap request
+
+'the following variables should be set to the function input values.
+
+global   VersionInfoResult_string as String 'type string namespace is: http://www.w3.org/2001/XMLSchema
+
+global   VersionInfoResult_o() as string 'output 1)
+'1) This script variable represents an output parameter.
+'   Since SoapResponseGetParam() always returns a dynamic array,
+'   this variable is declared as such.
+'   To use this variable as input parameter, a one-dimensional
+'   array with one element will be used.
+
+VersionInfoResult_o(0) = ""
+
+'Create soap request
+SoapRequest = SoapRequest + "<?xml version='1.0' encoding='UTF-8' standalone='no'?>"
+SoapRequest = SoapRequest + chr(13) + "<soapenv:Envelope"
+SoapRequest = SoapRequest + " xmlns:ns1='https://webservice.aspsms.com/aspsmsx2.asmx'"
+SoapRequest = SoapRequest + " xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/'"
+SoapRequest = SoapRequest + " xmlns:xsd='http://www.w3.org/2001/XMLSchema'"
+SoapRequest = SoapRequest + " xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'"
+SoapRequest = SoapRequest + ">"
+SoapRequest = SoapRequest + chr(13) + "  <soapenv:Header/>"
+SoapRequest = SoapRequest + chr(13) + "  <soapenv:Body>"
+SoapRequest = SoapRequest + chr(13) + "    <ns1:VersionInfo>"
+SoapRequest = SoapRequest + chr(13) + "    </ns1:VersionInfo>"
+SoapRequest = SoapRequest + chr(13) + "  </soapenv:Body>"
+SoapRequest = SoapRequest + chr(13) + "</soapenv:Envelope>"
+
+SoapRequest = replace( SoapRequest, "'", chr(34) )
+
+'Send soap request
+SoapReturnCode = 0
+SoapTransport = "http" 'http://schemas.xmlsoap.org/soap/http
+SoapEndPointUri = "https://webservice.aspsms.com/aspsmsx2.asmx"
+SoapAction = "https://webservice.aspsms.com/aspsmsx2.asmx/VersionInfo"
+
+if (lcase(SoapTransport) = "http") then
+
+  SoapReturnCode = SoapRequestSendHttp(SoapEndPointUri, SoapAction, SoapRequest, SoapResponse)
+
+  messagebox("return code", str(SoapReturnCode), 0, 0)
+  messagebox("soap response", SoapResponse, 0, 0)
+
+end if
+
+'Proces soap response using function SoapResponseGetParam()
+if (SoapReturnCode = 200) then
+
+'2) Due to possible complexity of the soap response,
+'   the proces of the soap response needs further
+'   attention: e.g. one or more output parameters
+'   can be a multi-dimensional array.
+
+end if

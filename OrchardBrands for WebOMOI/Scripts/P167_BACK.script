@@ -1,0 +1,10 @@
+﻿PanelLock()
+PanelUpdateEnable(0)
+HostScreenSendKey("F3")
+HostWaitII(10)
+If ScreenIdGet() = "(151)" Then 
+	HostScreenSendKey("F8")
+	HostWaitII(10)
+EndIf 
+PanelUnLock()
+End

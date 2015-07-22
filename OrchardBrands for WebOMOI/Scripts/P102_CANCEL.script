@@ -1,0 +1,6 @@
+﻿PanelUpdateEnable(0)
+sw2 = 0
+HostScreenSendKey("ENTER")
+HostWaitII(5)
+PanelUpdateEnable(7)
+End 

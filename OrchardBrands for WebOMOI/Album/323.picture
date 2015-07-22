@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?VersionInfo version="1.1" buildnumber="7.0.181" exename="lscollector.exe" exeversion="7.0.181.0" ?>
+<header xmlns="http://www.seagullsoftware.com/schemas/legasuite/screendefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screendefinition1_1.xsd" layout_version="1.1" creation_date_time="2015-03-18T13:06:01" application="collector" application_version="7.0.181.0">
+	<screen originator="LegaSuiteCollectorAwhost" name="AW000004" library="SEADSPF   " member_name="B#MK527D  " message_line_y="24">
+		<size cx="80" cy="24"/>
+		<action key="f3" conditional="true"/>
+		<action key="f5" conditional="true"/>
+		<action key="f12" conditional="true"/>
+		<action key="enter"/>
+		<action key="print"/>
+		<action key="roll_up" conditional="true"/>
+		<field field_type="screen_part" name="ZSFLCTL   " overlay="true">
+			<area>
+				<position x="0" y="0"/>
+				<size cx="80" cy="22"/>
+			</area>
+			<field field_type="subfile_container">
+				<field field_type="subfile_header">
+					<field field_type="field" data_type="alphanumeric" usage="output" name="##PGM     " display_length="10" data_length="10">
+						<area>
+							<position x="1" y="0"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="ZCOMPANY  " display_length="30" data_length="30">
+						<area>
+							<position x="28" y="0"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="output" name="*DATE     " display_length="8" data_length="6">
+						<area>
+							<position x="72" y="0"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" name="*DATE     " display_length="6" data_length="6">
+						<area>
+							<position x="74" y="0"/>
+							<size cx="6" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" name="##USER    " display_length="10" data_length="10">
+						<area>
+							<position x="1" y="1"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" high_intensity="true" display_length="21" data_length="21" value="W/W Affiliate History">
+						<area>
+							<position x="33" y="1"/>
+							<size cx="21" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="output" name="ZSCRNTIME " display_length="8" data_length="6">
+						<area>
+							<position x="72" y="1"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="9" data_length="9" value="Division:">
+						<area>
+							<position x="3" y="3"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="Z2CADICD  " display_length="2" data_length="2">
+						<area>
+							<position x="14" y="3"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="Z2DIVD    " display_length="40" data_length="40">
+						<area>
+							<position x="17" y="3"/>
+							<size cx="40" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="10" data_length="10" value="Affiliate:">
+						<area>
+							<position x="3" y="4"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="Z2CAAFID  " display_length="10" data_length="10">
+						<area>
+							<position x="14" y="4"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="Z2AFID    " display_length="30" data_length="30">
+						<area>
+							<position x="25" y="4"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="9" data_length="9" value="Customer:">
+						<area>
+							<position x="3" y="5"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="Z2DNJYNB  " display_length="9" data_length="9">
+						<area>
+							<position x="14" y="5"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="Z2DNPBCD  " display_length="3" data_length="3">
+						<area>
+							<position x="25" y="5"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="Z2DNLZTX  " display_length="15" data_length="15">
+						<area>
+							<position x="29" y="5"/>
+							<size cx="15" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="Z2DNONCD  " display_length="1" data_length="1">
+						<area>
+							<position x="45" y="5"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="Z2DNL0TX  " display_length="25" data_length="25">
+						<area>
+							<position x="47" y="5"/>
+							<size cx="25" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="2" data_length="2" value="Op">
+						<area>
+							<position x="0" y="6"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="5" data_length="5" value="Promo">
+						<area>
+							<position x="3" y="6"/>
+							<size cx="5" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="4" data_length="4" value="Date">
+						<area>
+							<position x="11" y="6"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="8" data_length="8" value="Activity">
+						<area>
+							<position x="19" y="6"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="7" data_length="7" value="Order #">
+						<area>
+							<position x="70" y="6"/>
+							<size cx="7" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="both" underline="true" name="Z2CAAFPR  " display_length="4" data_length="4">
+						<area>
+							<position x="3" y="7"/>
+							<size cx="4" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" data_type="date" usage="both" underline="true" lowercase="true" name="Z2CATRDT  " display_length="10" data_length="10">
+						<area>
+							<position x="8" y="7"/>
+							<size cx="10" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="both" underline="true" name="Z2PTDESC  " display_length="50" data_length="50">
+						<area>
+							<position x="19" y="7"/>
+							<size cx="50" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="both" underline="true" exit_required="true" name="Z2CAJWNB  " display_length="9" data_length="9">
+						<area>
+							<position x="70" y="7"/>
+							<size cx="9" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="fixed_text" display_length="27" data_length="27" value="5=Display Activity Details">
+						<area>
+							<position x="3" y="8"/>
+							<size cx="27" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" underline="true" name="Z1SEL     " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="10"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAAFPR  " display_length="4" data_length="4">
+						<area>
+							<position x="3" y="10"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="date" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CATRDT  " display_length="10" data_length="10">
+						<area>
+							<position x="8" y="10"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1PTDESC  " display_length="50" data_length="50">
+						<area>
+							<position x="19" y="10"/>
+							<size cx="50" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAJWNB  " display_length="9" data_length="9">
+						<area>
+							<position x="70" y="10"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" underline="true" name="Z1SEL     " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="11"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAAFPR  " display_length="4" data_length="4">
+						<area>
+							<position x="3" y="11"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="date" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CATRDT  " display_length="10" data_length="10">
+						<area>
+							<position x="8" y="11"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1PTDESC  " display_length="50" data_length="50">
+						<area>
+							<position x="19" y="11"/>
+							<size cx="50" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAJWNB  " display_length="9" data_length="9">
+						<area>
+							<position x="70" y="11"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" underline="true" name="Z1SEL     " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="12"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAAFPR  " display_length="4" data_length="4">
+						<area>
+							<position x="3" y="12"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="date" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CATRDT  " display_length="10" data_length="10">
+						<area>
+							<position x="8" y="12"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1PTDESC  " display_length="50" data_length="50">
+						<area>
+							<position x="19" y="12"/>
+							<size cx="50" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAJWNB  " display_length="9" data_length="9">
+						<area>
+							<position x="70" y="12"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" underline="true" name="Z1SEL     " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="13"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAAFPR  " display_length="4" data_length="4">
+						<area>
+							<position x="3" y="13"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="date" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CATRDT  " display_length="10" data_length="10">
+						<area>
+							<position x="8" y="13"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1PTDESC  " display_length="50" data_length="50">
+						<area>
+							<position x="19" y="13"/>
+							<size cx="50" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAJWNB  " display_length="9" data_length="9">
+						<area>
+							<position x="70" y="13"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" underline="true" name="Z1SEL     " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="14"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAAFPR  " display_length="4" data_length="4">
+						<area>
+							<position x="3" y="14"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="date" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CATRDT  " display_length="10" data_length="10">
+						<area>
+							<position x="8" y="14"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1PTDESC  " display_length="50" data_length="50">
+						<area>
+							<position x="19" y="14"/>
+							<size cx="50" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAJWNB  " display_length="9" data_length="9">
+						<area>
+							<position x="70" y="14"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" underline="true" name="Z1SEL     " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="15"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAAFPR  " display_length="4" data_length="4">
+						<area>
+							<position x="3" y="15"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="date" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CATRDT  " display_length="10" data_length="10">
+						<area>
+							<position x="8" y="15"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1PTDESC  " display_length="50" data_length="50">
+						<area>
+							<position x="19" y="15"/>
+							<size cx="50" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAJWNB  " display_length="9" data_length="9">
+						<area>
+							<position x="70" y="15"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" underline="true" name="Z1SEL     " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="16"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAAFPR  " display_length="4" data_length="4">
+						<area>
+							<position x="3" y="16"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="date" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CATRDT  " display_length="10" data_length="10">
+						<area>
+							<position x="8" y="16"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1PTDESC  " display_length="50" data_length="50">
+						<area>
+							<position x="19" y="16"/>
+							<size cx="50" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAJWNB  " display_length="9" data_length="9">
+						<area>
+							<position x="70" y="16"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" underline="true" name="Z1SEL     " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="17"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAAFPR  " display_length="4" data_length="4">
+						<area>
+							<position x="3" y="17"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="date" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CATRDT  " display_length="10" data_length="10">
+						<area>
+							<position x="8" y="17"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1PTDESC  " display_length="50" data_length="50">
+						<area>
+							<position x="19" y="17"/>
+							<size cx="50" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAJWNB  " display_length="9" data_length="9">
+						<area>
+							<position x="70" y="17"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" underline="true" name="Z1SEL     " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="18"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAAFPR  " display_length="4" data_length="4">
+						<area>
+							<position x="3" y="18"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="date" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CATRDT  " display_length="10" data_length="10">
+						<area>
+							<position x="8" y="18"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1PTDESC  " display_length="50" data_length="50">
+						<area>
+							<position x="19" y="18"/>
+							<size cx="50" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAJWNB  " display_length="9" data_length="9">
+						<area>
+							<position x="70" y="18"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" underline="true" name="Z1SEL     " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="19"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAAFPR  " display_length="4" data_length="4">
+						<area>
+							<position x="3" y="19"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="date" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CATRDT  " display_length="10" data_length="10">
+						<area>
+							<position x="8" y="19"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1PTDESC  " display_length="50" data_length="50">
+						<area>
+							<position x="19" y="19"/>
+							<size cx="50" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAJWNB  " display_length="9" data_length="9">
+						<area>
+							<position x="70" y="19"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" underline="true" name="Z1SEL     " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="20"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<color foreground="yellow"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAAFPR  " display_length="4" data_length="4">
+						<area>
+							<position x="3" y="20"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="date" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CATRDT  " display_length="10" data_length="10">
+						<area>
+							<position x="8" y="20"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" reverse_image="conditional" name="Z1PTDESC  " display_length="50" data_length="50">
+						<area>
+							<position x="19" y="20"/>
+							<size cx="50" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" reverse_image="conditional" name="Z1CAJWNB  " display_length="9" data_length="9">
+						<area>
+							<position x="70" y="20"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_end_more" conditional="true" name=".MOREIND  " display_length="12" data_length="12" value="     More...">
+					<area>
+						<position x="67" y="21"/>
+						<size cx="12" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+				<field field_type="subfile_end_bottom" conditional="true" name=".BOTTIND  " display_length="12" data_length="12" value="      Bottom">
+					<area>
+						<position x="67" y="21"/>
+						<size cx="12" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+			</field>
+		</field>
+		<field field_type="screen_part" name="*022/024  " overlay="true">
+			<area>
+				<position x="0" y="22"/>
+				<size cx="80" cy="2"/>
+			</area>
+			<field field_type="fixed_text" conditional="true" display_length="20" data_length="20" value="F3=Exit   F12=Cancel">
+				<area>
+					<position x="1" y="0"/>
+					<size cx="20" cy="1"/>
+				</area>
+			</field>
+			<field field_type="subfile_container">
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name=".SFLMSGREC" display_length="76" data_length="76">
+						<area>
+							<position x="1" y="1"/>
+							<size cx="76" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_end_plus" conditional="true" name=".+IND     " display_length="1" data_length="1" value="+">
+					<area>
+						<position x="78" y="1"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+			</field>
+		</field>
+	</screen>
+</header>

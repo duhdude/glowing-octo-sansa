@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2543.1.24" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/paneldefinition3_0.xsd">
+  <properties>
+    <title>Numeric output field layouts</title>
+    <id>OUTNUM</id>
+    <dimensions x="0" y="0" cx="920" cy="631"/>
+    <screen_name>OUT</screen_name>
+    <panel_flags>
+      <update_on_host_change/>
+      <size_independent/>
+      <no_zorder/>
+    </panel_flags>
+    <FontColor>
+      <FontStyleName>Text Label</FontStyleName>
+    </FontColor>
+  </properties>
+  <controls>
+    <ajax_label>
+      <dimensions x="15" y="26" cx="54" cy="16"/>
+      <title>@(ANY)@</title>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+      </general_flags_2>
+      <general_flags_1/>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="71" y="26" cx="58" cy="24"/>
+      <title>@(SAME)@</title>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+      </general_flags_2>
+      <general_flags_1>
+        <right_aligned/>
+      </general_flags_1>
+      <color_conversion>1</color_conversion>
+      <FontColor>
+        <FontStyleName>Output Field - Numeric</FontStyleName>
+        <ColorForeground>63</ColorForeground>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+      <ajax_opts_layout>
+        <ajax_layout_max_height_not_empty/>
+        <ajax_layout_min_height_not_empty/>
+      </ajax_opts_layout>
+      <ajax_max_height>26</ajax_max_height>
+      <ajax_min_height>24</ajax_min_height>
+    </ajax_label>
+  </controls>
+</panel>

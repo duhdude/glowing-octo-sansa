@@ -1,0 +1,18 @@
+﻿PanelFieldGetDataList("(LIST)",lstdta, -4,0)
+lstline2 = Val(lstdta) + 1
+lstline = "Q" + Str(lstline2)
+'MessageBox("",lstline,4,0)
+HostFieldGetData(lstline,qty2)
+If Trim(qty2) = "" Then 
+	qty2 = "1"
+Else 
+	If Val(qty2) = 5 Then 
+		qty2 = "5"
+	Else 
+		qty2 = Str(Val(qty2) + 1)
+	EndIf 
+EndIf 
+'MessageBox("",lstline,4,0)
+HostFieldPutData(lstline,0,qty2)
+PanelUpdateEnable(7)
+End 

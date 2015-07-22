@@ -1,0 +1,26 @@
+﻿Global Customer as CustomerStructure
+
+PanelUpdateEnable(0)
+HostScreenSendKey("F12")
+HostWaitII(10)
+
+If ScreenIdGet() = "(144)" Then 
+	If sw190 = 1 Then 
+		sw190 = 0
+		Customer.sAddress2 = Trim(@"@#PL3TX@")
+		Customer.sAddress3 = Trim(@"@#PUATX@")
+		Customer.sAddress4 = Trim(@"@#PUBTX@")
+		HostScreenSendKey("ENTER")
+		HostWaitII(10)
+		If ScreenIdGet() = "(160)" Then 
+			If sw3 = 0 Then 
+				HostCursorPut(15,18)
+			EndIf 
+'			LoadTexts()
+'			Wait(1)
+'			sysmsg = @"@&ORDMSG@"
+		EndIf 
+	EndIf 
+EndIf 
+PanelUpdateEnable(7)
+End

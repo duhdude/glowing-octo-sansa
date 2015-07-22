@@ -1,0 +1,3 @@
+﻿'MessageBox("","in SENDENTER",4,0)
+
+HostScreenSendKey("ENTER")

@@ -1,0 +1,7 @@
+﻿HostScreenSendKey("ENTER")
+HostWaitII(10)
+If ScreenIdGet() = "(231)" Then 
+	HostScreenSendKey("ENTER")
+	HostWaitII(10)
+EndIf 
+End

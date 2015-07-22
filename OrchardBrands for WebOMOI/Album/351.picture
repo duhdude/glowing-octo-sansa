@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?VersionInfo version="1.1" buildnumber="7.0.181" exename="lscollector.exe" exeversion="7.0.181.0" ?>
+<header xmlns="http://www.seagullsoftware.com/schemas/legasuite/screendefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screendefinition1_1.xsd" layout_version="1.1" creation_date_time="2015-03-18T13:06:01" application="collector" application_version="7.0.181.0">
+	<screen originator="LegaSuiteCollectorAwhost" name="AW000067" library="SEADSPF   " member_name="CSR0222#  " message_line_y="9">
+		<size cx="80" cy="24"/>
+		<action key="f1"/>
+		<action key="f3" conditional="true"/>
+		<action key="f4" conditional="true"/>
+		<action key="f5" conditional="true"/>
+		<action key="f12" conditional="true"/>
+		<action key="f13" conditional="true"/>
+		<action key="enter"/>
+		<action key="print"/>
+		<action key="clear" conditional="true"/>
+		<action key="help"/>
+		<field field_type="window" window_type="variable_position_generated_border">
+			<area>
+				<position x="1" y="1"/>
+				<size cx="54" cy="12"/>
+			</area>
+			<window_border border_characters="        " reverse_image="true">
+				<color foreground="green"/>
+			</window_border>
+			<field field_type="window_border">
+				<field field_type="fixed_text" value="                                                      " data_length="54" display_length="54" reverse_image="true">
+					<area>
+						<position x="0" y="0"/>
+						<size cx="54" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="1"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="53" y="1"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="2"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="53" y="2"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="3"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="53" y="3"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="4"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="53" y="4"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="5"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="53" y="5"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="6"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="53" y="6"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="7"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="53" y="7"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="8"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="53" y="8"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="9"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="53" y="9"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="10"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="53" y="10"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+				<field field_type="fixed_text" value="                                                      " data_length="54" display_length="54" reverse_image="true">
+					<area>
+						<position x="0" y="11"/>
+						<size cx="54" cy="1"/>
+					</area>
+					<color foreground="green"/>
+				</field>
+			</field>
+			<field field_type="screen_part" name="#RCDDTL1  " overlay="true">
+				<area>
+					<position x="0" y="1"/>
+					<size cx="54" cy="5"/>
+				</area>
+				<field field_type="fixed_text" high_intensity="true" display_length="25" data_length="25" value="Release All Recpts Prompt">
+					<area>
+						<position x="13" y="0"/>
+						<size cx="25" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" display_length="40" data_length="40" value="WARNING! Pressing Enter will release all">
+					<area>
+						<position x="3" y="2"/>
+						<size cx="40" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" display_length="41" data_length="41" value="recipients for this order.  To abort this">
+					<area>
+						<position x="3" y="3"/>
+						<size cx="41" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" display_length="39" data_length="39" value="process, press F12.  To continue, press">
+					<area>
+						<position x="3" y="4"/>
+						<size cx="39" cy="1"/>
+					</area>
+				</field>
+			</field>
+			<field field_type="screen_part" name="#CMDTXT1  " overlay="true">
+				<area>
+					<position x="0" y="8"/>
+					<size cx="54" cy="1"/>
+				</area>
+				<field field_type="fixed_text" display_length="10" data_length="10" value="F12=Cancel">
+					<area>
+						<position x="3" y="0"/>
+						<size cx="10" cy="1"/>
+					</area>
+				</field>
+			</field>
+			<field field_type="screen_part" name="#MSGCTL   " overlay="true">
+				<area>
+					<position x="0" y="9"/>
+					<size cx="54" cy="1"/>
+				</area>
+				<field field_type="subfile_container">
+					<field field_type="subfile_record">
+						<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name=".SFLMSG001" display_length="48" data_length="48">
+							<area>
+								<position x="2" y="0"/>
+								<size cx="48" cy="1"/>
+							</area>
+						</field>
+					</field>
+					<field field_type="subfile_end_plus" conditional="true" name=".+IND     " display_length="1" data_length="1" value="+">
+						<area>
+							<position x="51" y="0"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<color foreground="white"/>
+					</field>
+				</field>
+			</field>
+			<field field_type="screen_part">
+				<field field_type="fixed_text" display_length="6" data_length="6" value="Enter.">
+					<area>
+						<position x="3" y="6"/>
+						<size cx="6" cy="1"/>
+					</area>
+				</field>
+				<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name=".SFLMSGREC" display_length="50" data_length="50">
+					<area>
+						<position x="2" y="10"/>
+						<size cx="50" cy="1"/>
+					</area>
+				</field>
+			</field>
+		</field>
+	</screen>
+</header>

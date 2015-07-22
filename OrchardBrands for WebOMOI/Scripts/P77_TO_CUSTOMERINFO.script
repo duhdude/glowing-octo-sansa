@@ -1,0 +1,7 @@
+﻿HostScreenSendKey("F6")
+HostWaitII(5)
+shipcmplt = "N"
+giftchk="N"
+
+PanelUpdateEnable(5)
+End 

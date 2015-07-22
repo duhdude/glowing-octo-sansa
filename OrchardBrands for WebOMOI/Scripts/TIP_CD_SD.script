@@ -1,0 +1,24 @@
+﻿Rem
+Rem Script file
+Rem
+Option Explicit 
+Dim i,j,k As Integer 
+Dim nbCD, nbSD As Integer 
+Dim file_data, line, tmpD, tmpCD, tmpSD As String 
+i = FileLoad("C:\LegaSuite Projects\workspace.7.4\OrchardBrands for Web\Tip performance\OB JTalk.tip", file_data)
+j = StrCount(file_data, Chr(13))
+For i = 1 To j
+	line = Trim(StrItem(file_data, i, Chr(13)))
+	tmpD = Left(line, 3) 
+	If tmpD = "C D" Then 
+		k = Instr(1, line, "T")
+		tmpCD = Mid(line, 4, k - 4)
+		nbCD = nbCD + Val(tmpCD)
+	ElseIf tmpD = "S D" Then 
+		k = Instr(1, line, "T")
+		tmpSD = Mid(line, 4, k - 4)
+		nbSD = nbSD + Val(tmpSD)
+	EndIf 
+Next 
+OutputDebugString("CD=" & Str(nbCD) & " SD=" & Str(nbSD))
+MessageBox("TEST2", "CD=" & Str(nbCD) & " SD=" & Str(nbSD),0,0)

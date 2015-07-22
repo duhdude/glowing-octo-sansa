@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?VersionInfo version="1.1" buildnumber="7.0.171" exename="lscollector.exe" exeversion="7.0.171.0" ?>
+<header xmlns="http://www.seagullsoftware.com/schemas/legasuite/screendefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screendefinition1_1.xsd" layout_version="1.1" creation_date_time="2014-06-16T08:50:47" application="collector" application_version="7.0.171.0">
+	<screen originator="LegaSuiteCollectorAwhost" name="AW000042" library="SEADSPF   " member_name="CSR0401#  " message_line_y="24">
+		<size cx="80" cy="24"/>
+		<action key="f1"/>
+		<action key="f2" conditional="true"/>
+		<action key="f3" conditional="true"/>
+		<action key="f4" conditional="true"/>
+		<action key="f5" conditional="true"/>
+		<action key="f12" conditional="true"/>
+		<action key="f13" conditional="true"/>
+		<action key="f16" conditional="true"/>
+		<action key="f23" conditional="true"/>
+		<action key="enter"/>
+		<action key="print"/>
+		<action key="roll_down" conditional="true"/>
+		<action key="help"/>
+		<field field_type="screen_part" name="#RCDDTL2  " overlay="true">
+			<area>
+				<position x="0" y="0"/>
+				<size cx="80" cy="20"/>
+			</area>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="##PGM     " display_length="10" data_length="10">
+				<area>
+					<position x="1" y="0"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="7" data_length="7" value="DISPLAY">
+				<area>
+					<position x="12" y="0"/>
+					<size cx="7" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" high_intensity="true" display_length="33" data_length="33" value="Display Customer Bill To (2 of 2)">
+				<area>
+					<position x="24" y="0"/>
+					<size cx="33" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" name="*DATE     " display_length="8" data_length="6">
+				<area>
+					<position x="62" y="0"/>
+					<size cx="8" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" name="##TME     " display_length="8" data_length="6">
+				<area>
+					<position x="71" y="0"/>
+					<size cx="8" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="#PDUTX    " display_length="30" data_length="30">
+				<area>
+					<position x="25" y="1"/>
+					<size cx="30" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="14" data_length="14" value="Account #  . :">
+				<area>
+					<position x="1" y="3"/>
+					<size cx="14" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1LPNB    " display_length="7" data_length="7">
+				<area>
+					<position x="16" y="3"/>
+					<size cx="7" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="#DPOTX    " display_length="42" data_length="42">
+				<area>
+					<position x="24" y="3"/>
+					<size cx="42" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="14" data_length="14" value="Credits  . . :">
+				<area>
+					<position x="1" y="4"/>
+					<size cx="14" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1NPQT    " display_length="5" data_length="5">
+				<area>
+					<position x="18" y="4"/>
+					<size cx="5" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="16" data_length="16" value="On order . . . :">
+				<area>
+					<position x="30" y="4"/>
+					<size cx="16" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1F8VA    " display_length="13" data_length="9" decimal_positions="2">
+				<area>
+					<position x="54" y="4"/>
+					<size cx="13" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="14" data_length="14" value="Invoices . . :">
+				<area>
+					<position x="1" y="5"/>
+					<size cx="14" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1NQQT    " display_length="5" data_length="5">
+				<area>
+					<position x="18" y="5"/>
+					<size cx="5" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="16" data_length="16" value="Open A/R . . . :">
+				<area>
+					<position x="30" y="5"/>
+					<size cx="16" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1GEVA    " display_length="18" data_length="13" decimal_positions="2">
+				<area>
+					<position x="49" y="5"/>
+					<size cx="18" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="14" data_length="14" value="Payments . . :">
+				<area>
+					<position x="1" y="6"/>
+					<size cx="14" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1NRQT    " display_length="5" data_length="5">
+				<area>
+					<position x="18" y="6"/>
+					<size cx="5" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="16" data_length="16" value="Delinquent A/R :">
+				<area>
+					<position x="30" y="6"/>
+					<size cx="16" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1GCVA    " display_length="18" data_length="13" decimal_positions="2">
+				<area>
+					<position x="49" y="6"/>
+					<size cx="18" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="14" data_length="14" value="Avg pay days :">
+				<area>
+					<position x="1" y="7"/>
+					<size cx="14" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1NSQT    " display_length="5" data_length="5">
+				<area>
+					<position x="18" y="7"/>
+					<size cx="5" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="16" data_length="16" value="Last payment . :">
+				<area>
+					<position x="30" y="7"/>
+					<size cx="16" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1GDVA    " display_length="18" data_length="13" decimal_positions="2">
+				<area>
+					<position x="49" y="7"/>
+					<size cx="18" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="V1EODT    " display_length="8" data_length="6">
+				<area>
+					<position x="69" y="7"/>
+					<size cx="8" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="51" data_length="51" value="Last year         Year to date         Life to date">
+				<area>
+					<position x="26" y="9"/>
+					<size cx="51" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="14" data_length="14" value="Cash . . . . :">
+				<area>
+					<position x="1" y="10"/>
+					<size cx="14" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1WUVA    " display_length="18" data_length="13" decimal_positions="2">
+				<area>
+					<position x="18" y="10"/>
+					<size cx="18" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1WTVA    " display_length="18" data_length="13" decimal_positions="2">
+				<area>
+					<position x="39" y="10"/>
+					<size cx="18" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1F9VA    " display_length="18" data_length="13" decimal_positions="2">
+				<area>
+					<position x="60" y="10"/>
+					<size cx="18" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="14" data_length="14" value="Sales  . . . :">
+				<area>
+					<position x="1" y="11"/>
+					<size cx="14" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1WWVA    " display_length="18" data_length="13" decimal_positions="2">
+				<area>
+					<position x="18" y="11"/>
+					<size cx="18" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1WVVA    " display_length="18" data_length="13" decimal_positions="2">
+				<area>
+					<position x="39" y="11"/>
+					<size cx="18" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1GFVA    " display_length="18" data_length="13" decimal_positions="2">
+				<area>
+					<position x="60" y="11"/>
+					<size cx="18" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="26" data_length="26" value="Aging      Cash flow aging">
+				<area>
+					<position x="30" y="13"/>
+					<size cx="26" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#PAMTT    " display_length="10" data_length="10">
+				<area>
+					<position x="1" y="14"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="3" data_length="3" value=". :">
+				<area>
+					<position x="12" y="14"/>
+					<size cx="3" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1PNVA    " display_length="15" data_length="11" decimal_positions="2">
+				<area>
+					<position x="21" y="14"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1WXVA    " display_length="15" data_length="11" decimal_positions="2">
+				<area>
+					<position x="42" y="14"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#PANTT    " display_length="10" data_length="10">
+				<area>
+					<position x="1" y="15"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="3" data_length="3" value=". :">
+				<area>
+					<position x="12" y="15"/>
+					<size cx="3" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1POVA    " display_length="15" data_length="11" decimal_positions="2">
+				<area>
+					<position x="21" y="15"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1WYVA    " display_length="15" data_length="11" decimal_positions="2">
+				<area>
+					<position x="42" y="15"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#PAOTT    " display_length="10" data_length="10">
+				<area>
+					<position x="1" y="16"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="3" data_length="3" value=". :">
+				<area>
+					<position x="12" y="16"/>
+					<size cx="3" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1PPVA    " display_length="15" data_length="11" decimal_positions="2">
+				<area>
+					<position x="21" y="16"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1WZVA    " display_length="15" data_length="11" decimal_positions="2">
+				<area>
+					<position x="42" y="16"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#PAPTT    " display_length="10" data_length="10">
+				<area>
+					<position x="1" y="17"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="3" data_length="3" value=". :">
+				<area>
+					<position x="12" y="17"/>
+					<size cx="3" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1PQVA    " display_length="15" data_length="11" decimal_positions="2">
+				<area>
+					<position x="21" y="17"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1W0VA    " display_length="15" data_length="11" decimal_positions="2">
+				<area>
+					<position x="42" y="17"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#PAQTT    " display_length="10" data_length="10">
+				<area>
+					<position x="1" y="18"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="3" data_length="3" value=". :">
+				<area>
+					<position x="12" y="18"/>
+					<size cx="3" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1PRVA    " display_length="15" data_length="11" decimal_positions="2">
+				<area>
+					<position x="21" y="18"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1W1VA    " display_length="15" data_length="11" decimal_positions="2">
+				<area>
+					<position x="42" y="18"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" name="#PARTT    " display_length="10" data_length="10">
+				<area>
+					<position x="1" y="19"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="3" data_length="3" value=". :">
+				<area>
+					<position x="12" y="19"/>
+					<size cx="3" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1PSVA    " display_length="15" data_length="11" decimal_positions="2">
+				<area>
+					<position x="21" y="19"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1W2VA    " display_length="15" data_length="11" decimal_positions="2">
+				<area>
+					<position x="42" y="19"/>
+					<size cx="15" cy="1"/>
+				</area>
+			</field>
+		</field>
+		<field field_type="screen_part" name="*022/024  " overlay="true">
+			<area>
+				<position x="0" y="21"/>
+				<size cx="80" cy="3"/>
+			</area>
+			<field field_type="fixed_text" conditional="true" display_length="1" data_length="1">
+				<area>
+					<position x="1" y="0"/>
+					<size cx="1" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" conditional="true" display_length="62" data_length="62" value="F2=Letter   F3=Exit   F12=Cancel   F16=A/R History   F23=Notes">
+				<area>
+					<position x="1" y="1"/>
+					<size cx="62" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" conditional="true" display_length="18" data_length="18" value="F3=Exit   F5=Reset">
+				<area>
+					<position x="1" y="1"/>
+					<size cx="18" cy="1"/>
+				</area>
+			</field>
+			<field field_type="subfile_container">
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name=".SFLMSGREC" display_length="76" data_length="76">
+						<area>
+							<position x="1" y="2"/>
+							<size cx="76" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_end_plus" conditional="true" name=".+IND     " display_length="1" data_length="1" value="+">
+					<area>
+						<position x="78" y="2"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+			</field>
+		</field>
+	</screen>
+</header>

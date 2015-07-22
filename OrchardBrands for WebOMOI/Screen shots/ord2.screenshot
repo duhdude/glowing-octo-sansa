@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo version="1.1.2" buildnumber="Version 7.3" exename="legadev" exeversion="7,2543,1,24"?>
+<header xmlns="http://www.seagullsoftware.com/schemas/legasuite/screendefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screendefinition http://www.seagullsoftware.com/schemas/legasuite/screendefinition1_1.xsd" application="screendump" application_version="Version 7.3" layout_version="1.1.2" creation_date_time="2014-06-23T10:41:13">
+  <screen name="" originator="Seagull5250" lead_usage="FieldHeadAndTail">
+    <default_color foreground="green" background="black"/>
+    <size cx="80" cy="24"/>
+    <cursor>
+      <position x="41" y="3"/>
+    </cursor>
+    <action key="f1" caption="F1" attention_key="false" conditional="true"/>
+    <action key="f2" caption="F2" attention_key="false" conditional="true"/>
+    <action key="f3" caption="F3" attention_key="false" conditional="true"/>
+    <action key="f4" caption="F4" attention_key="false" conditional="true"/>
+    <action key="f5" caption="F5" attention_key="false" conditional="true"/>
+    <action key="f6" caption="F6" attention_key="false" conditional="true"/>
+    <action key="f7" caption="F7" attention_key="false" conditional="true"/>
+    <action key="f8" caption="F8" attention_key="false" conditional="true"/>
+    <action key="f9" caption="F9" attention_key="false" conditional="true"/>
+    <action key="f10" caption="F10" attention_key="false" conditional="true"/>
+    <action key="f11" caption="F11" attention_key="false" conditional="true"/>
+    <action key="f12" caption="F12" attention_key="false" conditional="true"/>
+    <action key="f13" caption="F13" attention_key="false" conditional="true"/>
+    <action key="f14" caption="F14" attention_key="false" conditional="true"/>
+    <action key="f15" caption="F15" attention_key="false" conditional="true"/>
+    <action key="f16" caption="F16" attention_key="false" conditional="true"/>
+    <action key="f17" caption="F17" attention_key="false" conditional="true"/>
+    <action key="f18" caption="F18" attention_key="false" conditional="true"/>
+    <action key="f19" caption="F19" attention_key="false" conditional="true"/>
+    <action key="f20" caption="F20" attention_key="false" conditional="true"/>
+    <action key="f21" caption="F21" attention_key="false" conditional="true"/>
+    <action key="f22" caption="F22" attention_key="false" conditional="true"/>
+    <action key="f23" caption="F23" attention_key="false" conditional="true"/>
+    <action key="f24" caption="F24" attention_key="false" conditional="true"/>
+    <action key="enter" caption="ENTER" attention_key="false" conditional="true"/>
+    <action key="print" caption="PRINT" attention_key="false" conditional="true"/>
+    <action key="home" caption="HOME" attention_key="false" conditional="true"/>
+    <action key="roll_up" caption="ROLL_UP" attention_key="false" conditional="true"/>
+    <action key="roll_down" caption="ROLL_DOWN" attention_key="false" conditional="true"/>
+    <action key="clear" caption="CLEAR" attention_key="false" conditional="true"/>
+    <action key="help" caption="HELP" attention_key="false" conditional="true"/>
+    <action key="dup" caption="DUP" attention_key="false" conditional="true"/>
+    <field field_type="screen_part" graphical_character_set="697" code_page="500">
+      <area>
+        <position x="0" y="0"/>
+        <size cx="80" cy="24"/>
+      </area>
+      <field field_type="field" name="FLD01002" value="OER0445   " data_type="alphanumeric" data_length="10" display_length="10" input="false" usage="output">
+        <area>
+          <position x="1" y="0"/>
+          <size cy="1" cx="10"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD01013" value="ENTER  " data_type="alphanumeric" data_length="7" display_length="7" input="false" usage="output">
+        <area>
+          <position x="12" y="0"/>
+          <size cy="1" cx="7"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD01025" value="Select Customer Sold To For Order" data_type="alphanumeric" data_length="33" display_length="33" input="false" usage="output" high_intensity="true">
+        <area>
+          <position x="24" y="0"/>
+          <size cy="1" cx="33"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD01063" value=" 6/23/14" data_type="alphanumeric" data_length="8" display_length="8" input="false" usage="output">
+        <area>
+          <position x="62" y="0"/>
+          <size cy="1" cx="8"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD01072" value="10:41:04" data_type="alphanumeric" data_length="8" display_length="8" input="false" usage="output">
+        <area>
+          <position x="71" y="0"/>
+          <size cy="1" cx="8"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD02026" value="        OB CP Test 001        " data_type="alphanumeric" data_length="30" display_length="30" input="false" usage="output" high_intensity="true">
+        <area>
+          <position x="25" y="1"/>
+          <size cy="1" cx="30"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD04002" value="Batch #" data_type="alphanumeric" data_length="7" display_length="7" input="false" usage="output" non_display="true">
+        <area>
+          <position x="1" y="3"/>
+          <size cy="1" cx="7"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD04012" value="    0" data_type="alphanumeric" data_length="5" display_length="5" input="false" usage="output" non_display="true">
+        <area>
+          <position x="11" y="3"/>
+          <size cy="1" cx="5"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD04021" value="Source code  . . ." data_type="alphanumeric" data_length="18" display_length="18" input="false" usage="output">
+        <area>
+          <position x="20" y="3"/>
+          <size cy="1" cx="18"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD04042" value="         " data_type="alphanumeric" data_length="9" display_length="9" input="true" usage="input" high_intensity="true" underline="true" column_separator="true">
+        <area>
+          <position x="41" y="3"/>
+          <size cy="1" cx="9"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD05042" value="   " data_type="alphanumeric" data_length="3" display_length="3" input="false" usage="output" high_intensity="true">
+        <area>
+          <position x="41" y="4"/>
+          <size cy="1" cx="3"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD05046" value="                              " data_type="alphanumeric" data_length="30" display_length="30" input="false" usage="output" high_intensity="true">
+        <area>
+          <position x="45" y="4"/>
+          <size cy="1" cx="30"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD06021" value="Customer . . . . ." data_type="alphanumeric" data_length="18" display_length="18" input="false" usage="output">
+        <area>
+          <position x="20" y="5"/>
+          <size cy="1" cx="18"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD06042" value="         " data_type="alphanumeric" data_length="9" display_length="9" input="true" usage="input" high_intensity="true" underline="true" column_separator="true">
+        <area>
+          <position x="41" y="5"/>
+          <size cy="1" cx="9"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD08021" value="Match code . . . ." data_type="alphanumeric" data_length="18" display_length="18" input="false" usage="output">
+        <area>
+          <position x="20" y="7"/>
+          <size cy="1" cx="18"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD08042" value="               " data_type="alphanumeric" data_length="15" display_length="15" input="true" usage="input" high_intensity="true" underline="true" column_separator="true">
+        <area>
+          <position x="41" y="7"/>
+          <size cy="1" cx="15"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD10021" value="Postal code  . . ." data_type="alphanumeric" data_length="18" display_length="18" input="false" usage="output">
+        <area>
+          <position x="20" y="9"/>
+          <size cy="1" cx="18"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD10042" value="          " data_type="alphanumeric" data_length="10" display_length="10" input="true" usage="input" high_intensity="true" underline="true" column_separator="true">
+        <area>
+          <position x="41" y="9"/>
+          <size cy="1" cx="10"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD11025" value="Last name  . ." data_type="alphanumeric" data_length="14" display_length="14" input="false" usage="output">
+        <area>
+          <position x="24" y="10"/>
+          <size cy="1" cx="14"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD11042" value="                         " data_type="alphanumeric" data_length="25" display_length="25" input="true" usage="input" high_intensity="true" underline="true" column_separator="true">
+        <area>
+          <position x="41" y="10"/>
+          <size cy="1" cx="25"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD12025" value="First name . ." data_type="alphanumeric" data_length="14" display_length="14" input="false" usage="output">
+        <area>
+          <position x="24" y="11"/>
+          <size cy="1" cx="14"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD12042" value="               " data_type="alphanumeric" data_length="15" display_length="15" input="true" usage="input" high_intensity="true" underline="true" column_separator="true">
+        <area>
+          <position x="41" y="11"/>
+          <size cy="1" cx="15"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD13025" value="Company  . . ." data_type="alphanumeric" data_length="14" display_length="14" input="false" usage="output">
+        <area>
+          <position x="24" y="12"/>
+          <size cy="1" cx="14"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD13042" value="                              " data_type="alphanumeric" data_length="30" display_length="30" input="true" usage="input" high_intensity="true" underline="true" column_separator="true">
+        <area>
+          <position x="41" y="12"/>
+          <size cy="1" cx="30"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD15021" value="Telephone #  . . ." data_type="alphanumeric" data_length="18" display_length="18" input="false" usage="output">
+        <area>
+          <position x="20" y="14"/>
+          <size cy="1" cx="18"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD15042" value="              " data_type="alphanumeric" data_length="14" display_length="14" input="true" usage="input" high_intensity="true" underline="true" column_separator="true">
+        <area>
+          <position x="41" y="14"/>
+          <size cy="1" cx="14"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD15057" value=" " data_type="alphanumeric" data_length="1" display_length="1" input="true" usage="input" high_intensity="true" underline="true" column_separator="true">
+        <area>
+          <position x="56" y="14"/>
+          <size cy="1" cx="1"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD15059" value="(Day,Eve,Fax)" data_type="alphanumeric" data_length="13" display_length="13" input="false" usage="output">
+        <area>
+          <position x="58" y="14"/>
+          <size cy="1" cx="13"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD17021" value="Alt cust #" data_type="alphanumeric" data_length="10" display_length="10" input="false" usage="output">
+        <area>
+          <position x="20" y="16"/>
+          <size cy="1" cx="10"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD17032" value=". . . ." data_type="alphanumeric" data_length="7" display_length="7" input="false" usage="output">
+        <area>
+          <position x="31" y="16"/>
+          <size cy="1" cx="7"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD17042" value="               " data_type="alphanumeric" data_length="15" display_length="15" input="true" usage="input" high_intensity="true" underline="true" column_separator="true">
+        <area>
+          <position x="41" y="16"/>
+          <size cy="1" cx="15"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD19021" value="Email Address  . ." data_type="alphanumeric" data_length="18" display_length="18" input="false" usage="output">
+        <area>
+          <position x="20" y="18"/>
+          <size cy="1" cx="18"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD19042" value="                              " data_type="alphanumeric" data_length="30" display_length="30" input="true" usage="input" high_intensity="true" underline="true" column_separator="true">
+        <area>
+          <position x="41" y="18"/>
+          <size cy="1" cx="30"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD22002" value="F2=Change defaults   F3=Exit   F6=Create   F7=Maintenance   F8=Review batch   " data_type="alphanumeric" data_length="78" display_length="78" input="false" usage="output">
+        <area>
+          <position x="1" y="21"/>
+          <size cy="1" cx="78"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD23002" value="F9=Accept batch   F11=Reject batch   F14=Item availability   F23=More keys    " data_type="alphanumeric" data_length="78" display_length="78" input="false" usage="output">
+        <area>
+          <position x="1" y="22"/>
+          <size cy="1" cx="78"/>
+        </area>
+      </field>
+      <field field_type="field" name="FLD24079" value=" " data_type="alphanumeric" data_length="1" display_length="1" input="false" usage="output" high_intensity="true">
+        <area>
+          <position x="78" y="23"/>
+          <size cy="1" cx="1"/>
+        </area>
+      </field>
+    </field>
+    <emulator_information>
+      <field field_type="screen_part" name="EmulatorInformation">
+        <area>
+          <position x="0" y="24"/>
+          <size cx="80" cy="1"/>
+        </area>
+        <field field_type="field" value=" 4-42 " data_type="alphanumeric" data_length="6" display_length="6" input="false" usage="output">
+          <area>
+            <position x="7" y="0"/>
+            <size cx="6" cy="1"/>
+          </area>
+          <color foreground="green" background="black"/>
+        </field>
+        <field field_type="field" value="SA" data_type="alphanumeric" data_length="2" display_length="2" input="false" usage="output" reverse_image="true">
+          <area>
+            <position x="17" y="0"/>
+            <size cx="2" cy="1"/>
+          </area>
+          <color foreground="black" background="green"/>
+        </field>
+        <field field_type="field" value="IM" data_type="alphanumeric" data_length="2" display_length="2" input="false" usage="output">
+          <area>
+            <position x="47" y="0"/>
+            <size cx="2" cy="1"/>
+          </area>
+          <color foreground="green" background="black"/>
+        </field>
+        <field field_type="field" value="II" data_type="alphanumeric" data_length="2" display_length="2" input="false" usage="output">
+          <area>
+            <position x="56" y="0"/>
+            <size cx="2" cy="1"/>
+          </area>
+          <color foreground="green" background="black"/>
+        </field>
+        <field field_type="field" value="KS" data_type="alphanumeric" data_length="2" display_length="2" input="false" usage="output">
+          <area>
+            <position x="37" y="0"/>
+            <size cx="2" cy="1"/>
+          </area>
+          <color foreground="green" background="black"/>
+        </field>
+        <field field_type="field" value="KB" data_type="alphanumeric" data_length="2" display_length="2" input="false" usage="output">
+          <area>
+            <position x="32" y="0"/>
+            <size cx="2" cy="1"/>
+          </area>
+          <color foreground="green" background="black"/>
+        </field>
+        <field field_type="field" value="MW" data_type="alphanumeric" data_length="2" display_length="2" input="false" usage="output" reverse_image="true">
+          <area>
+            <position x="27" y="0"/>
+            <size cx="2" cy="1"/>
+          </area>
+          <color foreground="black" background="green"/>
+        </field>
+        <field field_type="field" value="10.202.66.63" data_type="alphanumeric" data_length="12" display_length="12" input="false" usage="output">
+          <area>
+            <position x="60" y="0"/>
+            <size cx="12" cy="1"/>
+          </area>
+          <color foreground="green" background="black"/>
+        </field>
+      </field>
+      <named_boolean name="oia_is_hidden" value="false"/>
+      <named_boolean name="bidi_rl" value="false"/>
+      <named_boolean name="bidi_field_rl" value="false"/>
+      <named_boolean name="input_inhibit" value="false"/>
+      <named_boolean name="insert_mode" value="false"/>
+      <named_boolean name="is_system_request" value="false"/>
+      <named_boolean name="keyboard_shift" value="false"/>
+      <named_boolean name="keyboard_type_ahead" value="false"/>
+      <named_boolean name="message_wait" value="true"/>
+      <named_boolean name="has_error_line" value="false"/>
+      <named_boolean name="is_input_error" value="false"/>
+      <named_int name="restore_count" value="0"/>
+      <named_string name="error_text" value=""/>
+      <named_string name="system_name" value="10.202.66.63"/>
+    </emulator_information>
+  </screen>
+</header>

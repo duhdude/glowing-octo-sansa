@@ -1,0 +1,41 @@
+﻿Dim svtype As String 
+Dim clr As Integer 
+Global cardnum As String 
+
+PanelUpdateEnable(0)
+svtype = ""
+svtype = @"@#2K2NB@"
+If (svtype = "03") Or (svtype = "04") Or (svtype = "05") Or (svtype = "06") Then 
+	cardnum = @"@#2P6CD@"
+	ScriptCall("protect")
+'	If SoapReturnCode <> 200 Then 
+'		ScriptCall("protect2")
+'	EndIf 
+	If SoapReturnCode <> 200 Then 
+		MessageBox("Error in Token request","Token not available",4,0)
+	Else 
+'		HostFieldPutData("#2P6CD",0,token)
+'		HostScreenSendKey("ENTER")
+'		HostWaitII(5)
+  messagebox("token: ",  token(0),4,0)
+	EndIf 
+Else 
+	HostScreenSendKey("ENTER")
+	HostWaitII(5)
+EndIf 
+If svtype = "51" Then 
+	Goto end_script
+EndIf 
+HostFieldGetProp("#2P6CD",5,clr)
+If clr <> 9 Then 
+	HostFieldGetProp("#2D6DT",5,clr)
+EndIf 
+'messagebox("",str(clr),4,0)
+If clr = 9 Then 
+	HostFieldPutData("#2K2NB",0,svtype)
+Else 
+	HostFieldPutData("#2K2NB",0,"  ")
+EndIf 
+end_script: 
+PanelUpdateEnable(7)
+End 

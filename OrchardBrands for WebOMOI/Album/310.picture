@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?VersionInfo version="1.1" buildnumber="7.0.181" exename="lscollector.exe" exeversion="7.0.181.0" ?>
+<header xmlns="http://www.seagullsoftware.com/schemas/legasuite/screendefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screendefinition1_1.xsd" layout_version="1.1" creation_date_time="2015-02-24T15:14:15" application="collector" application_version="7.0.181.0">
+	<screen originator="LegaSuiteCollectorAwhost" name="AW000140" library="SEADSPF   " member_name="OER0778#  " message_line_y="24">
+		<size cx="80" cy="24"/>
+		<action key="f1"/>
+		<action key="f3" conditional="true"/>
+		<action key="f4" conditional="true"/>
+		<action key="f5" conditional="true"/>
+		<action key="f7" conditional="true"/>
+		<action key="f12" conditional="true"/>
+		<action key="f13" conditional="true"/>
+		<action key="enter"/>
+		<action key="print"/>
+		<action key="roll_up" conditional="true"/>
+		<action key="help"/>
+		<field field_type="screen_part" name="#SFLCTL   " overlay="true">
+			<area>
+				<position x="0" y="0"/>
+				<size cx="80" cy="19"/>
+			</area>
+			<field field_type="subfile_container">
+				<field field_type="subfile_header">
+					<field field_type="field" data_type="alphanumeric" usage="output" name="##PGM     " display_length="10" data_length="10">
+						<area>
+							<position x="1" y="0"/>
+							<size cx="10" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="7" data_length="7" value="DISPLAY">
+						<area>
+							<position x="12" y="0"/>
+							<size cx="7" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" high_intensity="true" display_length="19" data_length="19" value="Scan By Order Items">
+						<area>
+							<position x="31" y="0"/>
+							<size cx="19" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="output" name="*DATE     " display_length="8" data_length="6">
+						<area>
+							<position x="62" y="0"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="output" name="##TME     " display_length="8" data_length="6">
+						<area>
+							<position x="71" y="0"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="#PDUTX    " display_length="30" data_length="30">
+						<area>
+							<position x="25" y="1"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" reverse_image="true" display_length="4" data_length="4" value="FIFO">
+						<area>
+							<position x="63" y="1"/>
+							<size cx="4" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="7" data_length="7" value="Item  :">
+						<area>
+							<position x="1" y="3"/>
+							<size cx="7" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="#2BECD    " display_length="12" data_length="12">
+						<area>
+							<position x="11" y="3"/>
+							<size cx="12" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="#CX1TX    " display_length="40" data_length="40">
+						<area>
+							<position x="25" y="3"/>
+							<size cx="40" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="12" data_length="12" value="- Quantity -">
+						<area>
+							<position x="61" y="4"/>
+							<size cx="12" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="3" data_length="3" value="Opt">
+						<area>
+							<position x="1" y="5"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" name="#CBXSK    " display_length="14" data_length="14">
+						<area>
+							<position x="6" y="5"/>
+							<size cx="14" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="55" data_length="55" value="Order #        Customer  S  Price     Order  Ship   Whs">
+						<area>
+							<position x="23" y="5"/>
+							<size cx="55" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#CSK11    " display_length="4" data_length="4">
+						<area>
+							<position x="6" y="6"/>
+							<size cx="4" cy="1"/>
+						</area>
+						<indicator id="97"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#2BESK    " display_length="14" data_length="14">
+						<area>
+							<position x="6" y="6"/>
+							<size cx="14" cy="1"/>
+						</area>
+						<indicator negative="true" id="97"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#CSK12    " display_length="4" data_length="4">
+						<area>
+							<position x="11" y="6"/>
+							<size cx="4" cy="1"/>
+						</area>
+						<indicator id="97"/>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" non_display="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" protected="conditional" exit_required="true" name="#CSK13    " display_length="4" data_length="4">
+						<area>
+							<position x="16" y="6"/>
+							<size cx="4" cy="1"/>
+						</area>
+						<indicator id="97"/>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#2JWNB    " display_length="8" data_length="8">
+						<area>
+							<position x="22" y="6"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="1" data_length="1" value="-">
+						<area>
+							<position x="31" y="6"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#2JXNB    " display_length="3" data_length="3">
+						<area>
+							<position x="33" y="6"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#2D2NO    " display_length="9" data_length="9">
+						<area>
+							<position x="38" y="6"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" name="#2JMST    " display_length="1" data_length="1">
+						<area>
+							<position x="48" y="6"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#2SQPR    " display_length="8" data_length="7" decimal_positions="2">
+						<area>
+							<position x="51" y="6"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#2LIQT    " display_length="5" data_length="5">
+						<area>
+							<position x="61" y="6"/>
+							<size cx="5" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#2LLQT    " display_length="5" data_length="5">
+						<area>
+							<position x="68" y="6"/>
+							<size cx="5" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#2DYNO    " display_length="3" data_length="3">
+						<area>
+							<position x="75" y="6"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="26" data_length="26" value="Type options, press Enter.">
+						<area>
+							<position x="1" y="8"/>
+							<size cx="26" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="8" data_length="8" value="1=Select">
+						<area>
+							<position x="1" y="9"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" conditional="true" high_intensity="true" non_display="true" reverse_image="true" underline="true" display_length="1" data_length="1" value="?">
+						<area>
+							<position x="1" y="10"/>
+							<size cx="1" cy="1"/>
+						</area>
+						<indicator id="81"/>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#1SEL     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="11"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="#RBOSK    " display_length="14" data_length="14">
+						<area>
+							<position x="5" y="11"/>
+							<size cx="14" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1JWNB    " display_length="8" data_length="8">
+						<area>
+							<position x="21" y="11"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" conditional="true" non_display="conditional" display_length="1" data_length="1" value="-">
+						<area>
+							<position x="30" y="11"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1JXNB    " display_length="3" data_length="3">
+						<area>
+							<position x="32" y="11"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#RXKNB    " display_length="9" data_length="9">
+						<area>
+							<position x="37" y="11"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="#1JMST    " display_length="1" data_length="1">
+						<area>
+							<position x="47" y="11"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1SQPR    " display_length="8" data_length="7" decimal_positions="2">
+						<area>
+							<position x="50" y="11"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1LIQT    " display_length="6" data_length="5">
+						<area>
+							<position x="60" y="11"/>
+							<size cx="6" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1LLQT    " display_length="6" data_length="5">
+						<area>
+							<position x="68" y="11"/>
+							<size cx="6" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1DYNO    " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="11"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" name="#RYDTX    " display_length="40" data_length="40">
+						<area>
+							<position x="21" y="12"/>
+							<size cx="40" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#1SEL     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="13"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="#RBOSK    " display_length="14" data_length="14">
+						<area>
+							<position x="5" y="13"/>
+							<size cx="14" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1JWNB    " display_length="8" data_length="8">
+						<area>
+							<position x="21" y="13"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" conditional="true" non_display="conditional" display_length="1" data_length="1" value="-">
+						<area>
+							<position x="30" y="13"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1JXNB    " display_length="3" data_length="3">
+						<area>
+							<position x="32" y="13"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#RXKNB    " display_length="9" data_length="9">
+						<area>
+							<position x="37" y="13"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="#1JMST    " display_length="1" data_length="1">
+						<area>
+							<position x="47" y="13"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1SQPR    " display_length="8" data_length="7" decimal_positions="2">
+						<area>
+							<position x="50" y="13"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1LIQT    " display_length="6" data_length="5">
+						<area>
+							<position x="60" y="13"/>
+							<size cx="6" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1LLQT    " display_length="6" data_length="5">
+						<area>
+							<position x="68" y="13"/>
+							<size cx="6" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1DYNO    " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="13"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" name="#RYDTX    " display_length="40" data_length="40">
+						<area>
+							<position x="21" y="14"/>
+							<size cx="40" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#1SEL     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="15"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="#RBOSK    " display_length="14" data_length="14">
+						<area>
+							<position x="5" y="15"/>
+							<size cx="14" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1JWNB    " display_length="8" data_length="8">
+						<area>
+							<position x="21" y="15"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" conditional="true" non_display="conditional" display_length="1" data_length="1" value="-">
+						<area>
+							<position x="30" y="15"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1JXNB    " display_length="3" data_length="3">
+						<area>
+							<position x="32" y="15"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#RXKNB    " display_length="9" data_length="9">
+						<area>
+							<position x="37" y="15"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="#1JMST    " display_length="1" data_length="1">
+						<area>
+							<position x="47" y="15"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1SQPR    " display_length="8" data_length="7" decimal_positions="2">
+						<area>
+							<position x="50" y="15"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1LIQT    " display_length="6" data_length="5">
+						<area>
+							<position x="60" y="15"/>
+							<size cx="6" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1LLQT    " display_length="6" data_length="5">
+						<area>
+							<position x="68" y="15"/>
+							<size cx="6" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1DYNO    " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="15"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" name="#RYDTX    " display_length="40" data_length="40">
+						<area>
+							<position x="21" y="16"/>
+							<size cx="40" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" blink="conditional" column_separator="conditional" high_intensity="conditional" position_cursor="conditional" reverse_image="conditional" underline="conditional" exit_required="true" name="#1SEL     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="17"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="#RBOSK    " display_length="14" data_length="14">
+						<area>
+							<position x="5" y="17"/>
+							<size cx="14" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1JWNB    " display_length="8" data_length="8">
+						<area>
+							<position x="21" y="17"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" conditional="true" non_display="conditional" display_length="1" data_length="1" value="-">
+						<area>
+							<position x="30" y="17"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1JXNB    " display_length="3" data_length="3">
+						<area>
+							<position x="32" y="17"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#RXKNB    " display_length="9" data_length="9">
+						<area>
+							<position x="37" y="17"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="#1JMST    " display_length="1" data_length="1">
+						<area>
+							<position x="47" y="17"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1SQPR    " display_length="8" data_length="7" decimal_positions="2">
+						<area>
+							<position x="50" y="17"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1LIQT    " display_length="6" data_length="5">
+						<area>
+							<position x="60" y="17"/>
+							<size cx="6" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1LLQT    " display_length="6" data_length="5">
+						<area>
+							<position x="68" y="17"/>
+							<size cx="6" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="zoned_decimal" usage="output" high_intensity="true" name="#1DYNO    " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="17"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" name="#RYDTX    " display_length="40" data_length="40">
+						<area>
+							<position x="21" y="18"/>
+							<size cx="40" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_end_plus" conditional="true" name=".+IND     " display_length="1" data_length="1" value="+">
+					<area>
+						<position x="78" y="18"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+			</field>
+		</field>
+		<field field_type="screen_part" name="*022/024  " overlay="true">
+			<area>
+				<position x="0" y="21"/>
+				<size cx="80" cy="3"/>
+			</area>
+			<field field_type="fixed_text" conditional="true" display_length="1" data_length="1">
+				<area>
+					<position x="1" y="0"/>
+					<size cx="1" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" conditional="true" display_length="33" data_length="33" value="F3=Exit  F7=LIFO View  F12=Cancel">
+				<area>
+					<position x="1" y="1"/>
+					<size cx="33" cy="1"/>
+				</area>
+			</field>
+			<field field_type="subfile_container">
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name=".SFLMSGREC" display_length="76" data_length="76">
+						<area>
+							<position x="1" y="2"/>
+							<size cx="76" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_end_plus" conditional="true" name=".+IND     " display_length="1" data_length="1" value="+">
+					<area>
+						<position x="78" y="2"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+			</field>
+		</field>
+	</screen>
+</header>

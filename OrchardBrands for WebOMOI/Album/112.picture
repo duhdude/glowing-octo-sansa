@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?VersionInfo version="1.1" buildnumber="7.0.171" exename="lscollector.exe" exeversion="7.0.171.0" ?>
+<header xmlns="http://www.seagullsoftware.com/schemas/legasuite/screendefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screendefinition1_1.xsd" layout_version="1.1" creation_date_time="2014-06-16T08:50:47" application="collector" application_version="7.0.171.0">
+	<screen originator="LegaSuiteCollectorAwhost" name="AW000112" library="SEADSPF   " member_name="NCS00028# " message_line_y="23">
+		<size cx="80" cy="24"/>
+		<action key="f3" conditional="true"/>
+		<action key="f6" conditional="true"/>
+		<action key="f12" conditional="true"/>
+		<action key="f24" conditional="true"/>
+		<action key="enter"/>
+		<field field_type="screen_part" name="HEADER    ">
+			<area>
+				<position x="0" y="0"/>
+				<size cx="80" cy="7"/>
+			</area>
+			<field field_type="fixed_text" high_intensity="true" display_length="8" data_length="8" value="NCS00028">
+				<area>
+					<position x="1" y="0"/>
+					<size cx="8" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" high_intensity="true" display_length="7" data_length="7" value="DISPLAY">
+				<area>
+					<position x="14" y="0"/>
+					<size cx="7" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="12" data_length="12" value="Select Offer">
+				<area>
+					<position x="30" y="0"/>
+					<size cx="12" cy="1"/>
+				</area>
+				<color foreground="blue"/>
+			</field>
+			<field field_type="field" data_type="date" usage="output" high_intensity="true" name="PROC_DATE " display_length="10" data_length="10">
+				<area>
+					<position x="58" y="0"/>
+					<size cx="10" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="time" usage="output" high_intensity="true" name="PROC_TIME " display_length="8" data_length="8">
+				<area>
+					<position x="69" y="0"/>
+					<size cx="8" cy="1"/>
+				</area>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="COMPNAME  " display_length="30" data_length="30">
+				<area>
+					<position x="24" y="1"/>
+					<size cx="30" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="3" data_length="3" value="Opt">
+				<area>
+					<position x="0" y="3"/>
+					<size cx="3" cy="1"/>
+				</area>
+				<color foreground="green"/>
+			</field>
+			<field field_type="fixed_text" display_length="8" data_length="8" value="Division">
+				<area>
+					<position x="4" y="3"/>
+					<size cx="8" cy="1"/>
+				</area>
+				<color foreground="green"/>
+			</field>
+			<field field_type="fixed_text" display_length="5" data_length="5" value="Offer">
+				<area>
+					<position x="15" y="3"/>
+					<size cx="5" cy="1"/>
+				</area>
+				<color foreground="green"/>
+			</field>
+			<field field_type="fixed_text" display_length="11" data_length="11" value="Description">
+				<area>
+					<position x="24" y="3"/>
+					<size cx="11" cy="1"/>
+				</area>
+				<color foreground="green"/>
+			</field>
+			<field field_type="fixed_text" display_length="6" data_length="6" value="Source">
+				<area>
+					<position x="59" y="3"/>
+					<size cx="6" cy="1"/>
+				</area>
+				<color foreground="green"/>
+			</field>
+			<field field_type="fixed_text" display_length="25" data_length="25" value="Type Options, Press Enter">
+				<area>
+					<position x="0" y="5"/>
+					<size cx="25" cy="1"/>
+				</area>
+				<color foreground="green"/>
+			</field>
+			<field field_type="fixed_text" display_length="8" data_length="8" value="1=Select">
+				<area>
+					<position x="0" y="6"/>
+					<size cx="8" cy="1"/>
+				</area>
+				<color foreground="green"/>
+			</field>
+		</field>
+		<field field_type="screen_part" name="SCREEN1A  " overlay="true">
+			<area>
+				<position x="0" y="8"/>
+				<size cx="80" cy="16"/>
+			</area>
+			<field field_type="subfile_container">
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="0"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="0"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="0"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="0"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="0"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="1"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="1"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="1"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="1"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="1"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="2"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="2"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="2"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="2"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="2"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="3"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="3"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="3"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="3"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="3"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="4"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="4"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="4"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="4"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="4"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="5"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="5"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="5"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="5"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="5"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="6"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="6"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="6"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="6"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="6"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="7"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="7"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="7"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="7"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="7"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="8"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="8"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="8"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="8"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="8"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="9"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="9"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="9"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="9"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="9"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="10"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="10"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="10"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="10"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="10"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="11"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="11"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="11"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="11"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="11"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" high_intensity="true" underline="true" name="CTOPTN    " display_length="1" data_length="1">
+						<area>
+							<position x="1" y="12"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDIVN    " display_length="2" data_length="2">
+						<area>
+							<position x="4" y="12"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTOFFR    " display_length="3" data_length="3">
+						<area>
+							<position x="15" y="12"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTDESC    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="12"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="CTSRCE    " display_length="9" data_length="9">
+						<area>
+							<position x="59" y="12"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_end_more" conditional="true" name=".MOREIND  " display_length="12" data_length="12" value="     More...">
+					<area>
+						<position x="67" y="13"/>
+						<size cx="12" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+				<field field_type="subfile_end_bottom" conditional="true" name=".BOTTIND  " display_length="12" data_length="12" value="      Bottom">
+					<area>
+						<position x="67" y="13"/>
+						<size cx="12" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+			</field>
+			<field field_type="subfile_container">
+				<field field_type="subfile_header">
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="MESSAGE   " display_length="77" data_length="77">
+						<area>
+							<position x="1" y="14"/>
+							<size cx="77" cy="1"/>
+						</area>
+						<color foreground="red"/>
+					</field>
+					<field field_type="fixed_text" display_length="7" data_length="7" value="F3=Exit">
+						<area>
+							<position x="0" y="15"/>
+							<size cx="7" cy="1"/>
+						</area>
+						<color foreground="blue"/>
+					</field>
+					<field field_type="fixed_text" display_length="9" data_length="9" value="F6=Create">
+						<area>
+							<position x="11" y="15"/>
+							<size cx="9" cy="1"/>
+						</area>
+						<color foreground="blue"/>
+					</field>
+					<field field_type="fixed_text" display_length="10" data_length="10" value="F12=Cancel">
+						<area>
+							<position x="24" y="15"/>
+							<size cx="10" cy="1"/>
+						</area>
+						<color foreground="blue"/>
+					</field>
+				</field>
+			</field>
+		</field>
+	</screen>
+</header>

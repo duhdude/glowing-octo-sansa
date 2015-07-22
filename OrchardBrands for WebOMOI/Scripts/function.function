@@ -1,0 +1,15 @@
+﻿Rem
+Rem Script Function file
+Rem
+Option Explicit
+Function OnPCCommand(command As String , pause As Integer )
+	Dim pos1 As Integer 
+	Dim pdfurl As String 
+	If ScreenIdGet() = "(191)" Then 
+		pos1 = Instr(1,command,"http:")
+		pdfurl = Mid(command,pos1,999)
+'		MessageBox("pdfurl=  ", "pdfurl: " + pdfurl, 0, 0)
+		UrlOpen(pdfurl,"_blank")
+	EndIf 
+'		MessageBox("OnPCCommmand called", "Command: " + command, 0, 0)
+End Function 

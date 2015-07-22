@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="1.0.0" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/paneldefinition3_0.xsd">
+  <properties>
+    <panel_flags>
+      <size_independent/>
+      <no_zorder/>
+      <no_panel_host/>
+      <secondary/>
+      <no_move_cursor_as_host/>
+    </panel_flags>
+    <id>WORKFLOW</id>
+    <title>&lt;Place your title here&gt;</title>
+    <codepage>1252</codepage>
+    <dimensions x="0" y="0" cx="650" cy="391"/>
+    <general_flags_1/>
+    <general_flags_3/>
+    <panel_type>1</panel_type>
+  </properties>
+  <controls>
+    <ajax_text>
+      <dimensions x="18" y="97" cx="85" cy="20"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_1>
+        <auto_tab/>
+        <cursor_selected/>
+        <output_when_read_only/>
+      </general_flags_1>
+      <host_field>WFVAR</host_field>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+        <visibility_output_empty_disable/>
+        <visibility_output_data_disable/>
+      </general_flags_2>
+      <general_flags_3/>
+      <id>STRING</id>
+      <FontColor>
+        <FontStyleName>Input Field - Alphanumeric</FontStyleName>
+      </FontColor>
+      <field_length length="0" field_type="0" check_direct="0"/>
+      <ajax_opacity>100</ajax_opacity>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_text>
+    <ajax_text_area>
+      <dimensions x="152" y="97" cx="264" cy="54"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+        <visibility_output_empty_disable/>
+        <visibility_output_data_disable/>
+      </general_flags_2>
+      <id>MLE</id>
+      <FontColor>
+        <FontStyleName>Input Field - Alphanumeric</FontStyleName>
+      </FontColor>
+      <general_flags_1>
+        <word_wrap/>
+      </general_flags_1>
+      <ajax_opacity>100</ajax_opacity>
+      <general_flags_3>
+        <host_wrap/>
+      </general_flags_3>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_text_area>
+    <ajax_grid>
+      <dimensions x="17" y="224" cx="370" cy="78"/>
+      <ajax_grid_column>
+        <general_flags_1/>
+        <host_field>(ANY)</host_field>
+        <title>(ANY)</title>
+        <column_width_chars>100</column_width_chars>
+        <id>LSTCOL1</id>
+      </ajax_grid_column>
+      <ajax_grid_column>
+        <general_flags_1/>
+        <host_field>(ANY)</host_field>
+        <title>(ANY)</title>
+        <column_width_chars>102</column_width_chars>
+        <id>LSTCOL2</id>
+      </ajax_grid_column>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_1/>
+      <list_box_flags>
+        <selection_multiple/>
+        <selection_none/>
+        <empty_line_ends/>
+      </list_box_flags>
+      <id>TABLE</id>
+      <key_page_up>2</key_page_up>
+      <key_page_down>3</key_page_down>
+      <header_height>20</header_height>
+      <help_text>Click the right mouse button for options.</help_text>
+      <general_flags_2/>
+      <FontColor>
+        <FontStyleName>List Column - Alphanumeric</FontStyleName>
+        <ColorBackground>16</ColorBackground>
+      </FontColor>
+      <FontColorListAlternate>
+        <ColorBackground>16</ColorBackground>
+      </FontColorListAlternate>
+      <FontColorHeader>
+        <FontStyleName>List Header</FontStyleName>
+        <ColorForeground>16</ColorForeground>
+        <ColorBackground>33</ColorBackground>
+      </FontColorHeader>
+      <ajax_grid_flags>
+        <ajax_enable_hideshow_columns/>
+        <ajax_show_lines_btw_columns/>
+        <ajax_auto_width/>
+        <ajax_statusbar_hide/>
+        <ajax_enable_alternate_row_colors/>
+      </ajax_grid_flags>
+      <ajax_opts_common>
+        <ajax_draggable/>
+        <ajax_enable_control_resizing/>
+      </ajax_opts_common>
+      <ajax_filter_field_length>100</ajax_filter_field_length>
+    </ajax_grid>
+    <ajax_text>
+      <dimensions x="18" y="121" cx="85" cy="20"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_1>
+        <auto_tab/>
+        <cursor_selected/>
+        <output_when_read_only/>
+      </general_flags_1>
+      <host_field>WFVAR</host_field>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+        <visibility_output_empty_disable/>
+        <visibility_output_data_disable/>
+      </general_flags_2>
+      <general_flags_3/>
+      <id>URL</id>
+      <FontColor>
+        <FontStyleName>Input Field - Alphanumeric</FontStyleName>
+      </FontColor>
+      <field_length length="0" field_type="0" check_direct="0"/>
+      <ajax_opacity>100</ajax_opacity>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_text>
+    <ajax_date>
+      <dimensions x="18" y="145" cx="108" cy="20"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_1>
+        <auto_tab/>
+        <cursor_selected/>
+        <output_when_read_only/>
+      </general_flags_1>
+      <host_field>WFVAR</host_field>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+        <visibility_output_empty_disable/>
+        <visibility_output_data_disable/>
+      </general_flags_2>
+      <general_flags_3/>
+      <id>DATE</id>
+      <field_format>[dd-MM-yyyy]EEEE d MMMM yyyy</field_format>
+      <FontColor>
+        <FontStyleName>Input Field - Alphanumeric</FontStyleName>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_date>
+    <ajax_text>
+      <dimensions x="18" y="169" cx="85" cy="20"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_1>
+        <auto_tab/>
+        <cursor_selected/>
+        <output_when_read_only/>
+      </general_flags_1>
+      <host_field>WFVAR</host_field>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+        <visibility_output_empty_disable/>
+        <visibility_output_data_disable/>
+      </general_flags_2>
+      <general_flags_3/>
+      <id>INTEGER</id>
+      <FontColor>
+        <FontStyleName>Input Field - Alphanumeric</FontStyleName>
+      </FontColor>
+      <field_length length="0" field_type="0" check_direct="0"/>
+      <ajax_opacity>100</ajax_opacity>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_text>
+    <ajax_text>
+      <dimensions x="18" y="193" cx="85" cy="20"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_1>
+        <auto_tab/>
+        <cursor_selected/>
+        <output_when_read_only/>
+      </general_flags_1>
+      <host_field>WFVAR</host_field>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+        <visibility_output_empty_disable/>
+        <visibility_output_data_disable/>
+      </general_flags_2>
+      <general_flags_3/>
+      <id>FLOAT</id>
+      <FontColor>
+        <FontStyleName>Input Field - Alphanumeric</FontStyleName>
+      </FontColor>
+      <field_length length="0" field_type="0" check_direct="0"/>
+      <ajax_opacity>100</ajax_opacity>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_text>
+    <ajax_check>
+      <dimensions x="494" y="98" cx="145" cy="18"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <value_selected>tagname</value_selected>
+      <state_invalid>2</state_invalid>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+        <visibility_output_empty_disable/>
+        <visibility_output_data_disable/>
+        <visibility_equal_hide/>
+      </general_flags_2>
+      <general_flags_1>
+        <translate/>
+      </general_flags_1>
+      <general_flags_3/>
+      <id>TAG</id>
+      <title>tagname</title>
+      <host_field>&amp;&amp;TAGNAME</host_field>
+      <FontColor>
+        <FontStyleName>Check Box</FontStyleName>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <ajax_opts_common>
+        <ajax_enable_text_expression/>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_check>
+    <ajax_button>
+      <dimensions x="0" y="0" cx="650" cy="50"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <general_flags_2>
+        <visibility_not_present_disable/>
+        <visibility_output_empty_disable/>
+        <visibility_output_data_disable/>
+      </general_flags_2>
+      <FontColor>
+        <FontStyleName>Title</FontStyleName>
+        <ColorForeground>16</ColorForeground>
+        <ColorBackground>0</ColorBackground>
+      </FontColor>
+      <general_flags_3>
+        <no_focus_line/>
+      </general_flags_3>
+      <general_flags_1/>
+      <image_file>Resources\images\Header_blue.jpg</image_file>
+      <title>User: @&amp;&amp;USERID@ | Workflow Process ID: @&amp;&amp;_WFID@</title>
+      <id>BUTTON1</id>
+      <ajax_opacity>100</ajax_opacity>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_button>
+    <ajax_label>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+        <visibility_equal_hide/>
+      </general_flags_2>
+      <general_flags_1>
+        <translate/>
+      </general_flags_1>
+      <dimensions x="17" y="66" cx="72" cy="16"/>
+      <general_flags_3/>
+      <field_flags/>
+      <FontColor>
+        <FontStyleName>Text Label</FontStyleName>
+        <ColorForeground>1</ColorForeground>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <id>LABEL</id>
+      <title>Label</title>
+      <ajax_opacity>100</ajax_opacity>
+      <ajax_opts_common>
+        <ajax_enable_text_expression/>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+    </ajax_label>
+    <ajax_button>
+      <dimensions x="17" y="345" cx="126" cy="28"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <ajax_center>1</ajax_center>
+      <general_flags_1/>
+      <general_flags_3/>
+      <title>eventname</title>
+      <script>global _WFeventname as string
+global _WFmap as string
+_WFeventname = &quot;[EVENTNAME]&quot;
+_WFmap = &quot;[FIELDMAP]&quot;
+scriptcall(&quot;eventWF&quot;)
+PanelButtonClick(&quot;EXIT&quot;)
+
+</script>
+      <FontColor>
+        <FontStyleName>Push Button</FontStyleName>
+        <ColorForeground>16</ColorForeground>
+      </FontColor>
+      <image_file>Resources\images\button_medium_grayback.jpg</image_file>
+      <id>EVENT</id>
+      <ajax_opacity>100</ajax_opacity>
+    </ajax_button>
+    <ajax_button>
+      <dimensions x="504" y="345" cx="126" cy="28"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <ajax_center>1</ajax_center>
+      <general_flags_1/>
+      <general_flags_3/>
+      <title>Cancel</title>
+      <FontColor>
+        <FontStyleName>Push Button</FontStyleName>
+        <ColorForeground>16</ColorForeground>
+      </FontColor>
+      <image_file>Resources\images\button_medium_grayback.jpg</image_file>
+      <script>scriptcall(&quot;usrlstwf&quot;)
+panelupdateenable(5)
+</script>
+      <panel_next>*</panel_next>
+      <id>BUTTON4</id>
+      <ajax_opacity>100</ajax_opacity>
+    </ajax_button>
+  </controls>
+</panel>

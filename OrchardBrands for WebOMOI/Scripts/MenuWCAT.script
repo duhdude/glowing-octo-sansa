@@ -1,0 +1,12 @@
+﻿Rem
+Rem Script file
+Rem
+
+'This script is called when the Order Entry item is pressed on the Menu webpage
+Dim screen_found As String 
+
+PanelUpdateEnable(0)
+HostFieldPutData("#CASCD",0,"WCAT")
+HostScreenSendKey("Enter")
+HostWaitForScreen("(20)",10,screen_found)
+End

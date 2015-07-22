@@ -1,0 +1,10 @@
+﻿HostFieldGetData(fld1,qty1)
+If Trim(qty1) <> "" Then 
+	qty2 = Str(Val(qty1) - 1)
+	If qty2 = "0" Then 
+		qty2 = "  "
+	EndIf 
+	HostFieldPutData(fld1,0,qty2)
+	PanelUpdateEnable(7)
+EndIf 
+End 

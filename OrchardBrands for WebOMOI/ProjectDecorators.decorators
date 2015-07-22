@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2543.1.24" modelVersion="1.0" ?>
+<Decorators>
+   <Decorator name="no_border">
+      <BorderStyle
+            bottom="none"
+            left="none"
+            right="none"
+            top="none"/>
+      <BorderColor
+            bottom="16"
+            left="16"
+            right="16"
+            top="16"/>
+      <BorderWidth
+            bottom="0"
+            left="0"
+            right="0"
+            top="0"/>
+   </Decorator>
+   <Decorator name="purple">
+      <BorderColor
+            bottom="87"
+            left="87"
+            right="87"
+            top="87"/>
+   </Decorator>
+   <Decorator
+         name="Container1"
+         type="SIMPLE">
+      <BorderStyle
+            bottom="solid"
+            left="solid"
+            right="solid"
+            top="solid"/>
+      <BorderWidth
+            bottom="2"
+            left="2"
+            right="2"
+            top="2"/>
+      <BorderColor
+            bottom="91"
+            left="91"
+            right="91"
+            top="91"/>
+   </Decorator>
+   <Decorator
+         name="bottomborder"
+         type="SIMPLE">
+      <ColorBackground>81</ColorBackground>
+      <BorderColor
+            left="81"
+            right="81"
+            top="81"/>
+      <BorderWidth
+            bottom="0"
+            left="0"
+            right="0"
+            top="0"/>
+   </Decorator>
+</Decorators>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2543.1.24" modelVersion="1.0" ?>
+<OisObject>
+   <ScriptCall function="SETSW1"/>
+   <Filters>
+      <Filter>Command</Filter>
+      <Filter>FieldPut</Filter>
+   </Filters>
+   <Description>Set Switch 1</Description>
+</OisObject>

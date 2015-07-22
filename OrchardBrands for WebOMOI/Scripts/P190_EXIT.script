@@ -1,0 +1,33 @@
+﻿Global Customer as CustomerStructure
+
+PanelUpdateEnable(0)
+HostScreenSendKey("F3")
+HostWaitII(10)
+If (ScreenIdGet() = "(171)") Then 
+	HostScreenSendKey("F3")
+	HostWaitII(10)
+EndIf 
+If (ScreenIdGet() = "(144)") Then 
+	HostScreenSendKey("F3")
+	HostWaitII(10)
+EndIf 
+If (ScreenIdGet() = "(160)") Or (ScreenIdGet() = "(139)")  Or (ScreenIdGet() = "(127)") Then 
+	PanelUpdateEnable(3)
+	End 
+EndIf 
+
+If ScreenIdGet() = "(144)" Then 
+	If sw190 = 1 Then 
+		sw190 = 0
+		Customer.sAddress2 = Trim(@"@#PL3TX@")
+		Customer.sAddress3 = Trim(@"@#PUATX@")
+		Customer.sAddress4 = Trim(@"@#PUBTX@")
+		HostScreenSendKey("ENTER")
+		HostWaitII(10)
+		If (ScreenIdGet() = "(160)") And (sw3 = 0) Then 
+			HostCursorPut(15,18)
+		EndIf 
+	EndIf 
+EndIf 
+'ScriptCall("ToPayment1")
+End

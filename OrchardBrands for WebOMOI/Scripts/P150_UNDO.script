@@ -1,0 +1,7 @@
+﻿HostFieldPutData("#1SQPR",0,prevamt)
+Disc="P"
+discamt=""
+prevamt=""
+end_script: 
+PanelUpdateEnable(7)
+End

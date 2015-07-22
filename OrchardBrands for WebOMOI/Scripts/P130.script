@@ -1,0 +1,16 @@
+﻿PanelUpdateEnable(0)
+HostScreensendkey("Page Down")
+HostWaitii(5)
+paycode1=@"@#1QICG@"
+paycode2=@"@#DTTRF@"
+sdep=@"@#1XTSW@"
+sref=@"@#1XUSW@"
+daydef=@"@#1N1QX@"
+datedef=@"@V1B8DT@"
+nbrins=@"@#1N2QX@"
+insint=@"@#1N3QX@"
+fixins=@"@#1N4QX@"
+expdate=@"@V1B9DT@"
+HostScreensendkey("Page Up")
+HostWaitii(5)
+PanelUpdateEnable(7)

@@ -1,0 +1,86 @@
+'Process web service
+'wsdl file: /OrchardBrands for Web/TokenService/TokenService-rl2.wsdl
+'service: TokenService-rl2.6
+'port: TokenService-rl2.6
+'operation: protect
+
+'Option explicit
+Dim SoapRequest As String 'this will hold the soap request
+Global SoapReturnCode As Integer 
+Dim SoapTransport As String 
+Dim SoapEndPointUri As String 
+Dim SoapAction As String 
+Dim SoapResponse As String 
+Dim soap_response_error_message As String 
+
+'Parameters soap request
+
+'the following variables should be set to the function input values.
+Global apiKey_string As String 'type string namespace is: http://www.w3.org/2001/XMLSchema
+Global protectionStrategyName_string As String 'type string namespace is: http://www.w3.org/2001/XMLSchema
+Global data_string As String 'type string namespace is: http://www.w3.org/2001/XMLSchema
+Global userName_string As String 'type string namespace is: http://www.w3.org/2001/XMLSchema
+Global token(),pc,ps,hh As String 
+
+Global protectReturn_ResponseData As String 'type ResponseData namespace is: http://webservice.tokenmanager.nubridges.com
+
+
+Global protectResult_o() As String 'output 1)
+'1) This script variable represents an output parameter.
+'   Since SoapResponseGetParam() always returns a dynamic array,
+'   this variable is declared as such.
+'   To use this variable as input parameter, a one-dimensional
+'   array with one element will be used.
+
+protectResult_o(0) = ""
+apiKey_string = "MTQxOTk1OTkzOTg0NU9yY2hhcjE0MDkzNzY2MTQ="
+protectionStrategyName_string = "ROUPEM_CCALPHA"
+
+'Create soap request
+SoapRequest = SoapRequest + "<?xml version='1.0' encoding='UTF-8' standalone='no'?>"
+SoapRequest = SoapRequest + Chr(13) + "<soapenv:Envelope"
+SoapRequest = SoapRequest + " xmlns:ns1='http://webservice.tokenmanager.nubridges.com'"
+SoapRequest = SoapRequest + " xmlns:soapenv='http://schemas.xmlsoap.org/soap/envelope/'"
+SoapRequest = SoapRequest + " xmlns:xsd='http://www.w3.org/2001/XMLSchema'"
+SoapRequest = SoapRequest + " xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'"
+SoapRequest = SoapRequest + ">"
+SoapRequest = SoapRequest + Chr(13) + "  <soapenv:Header/>"
+SoapRequest = SoapRequest + Chr(13) + "  <soapenv:Body>"
+SoapRequest = SoapRequest + Chr(13) + "    <ns1:protect>"
+SoapRequest = SoapRequest + Chr(13) + "      <xsd:apiKey>" + apiKey_string + "</xsd:apiKey>"
+SoapRequest = SoapRequest + Chr(13) + "      <xsd:protectionStrategyName>" + protectionStrategyName_string + "</xsd:protectionStrategyName>"
+SoapRequest = SoapRequest + Chr(13) + "      <xsd:data>" + "5111111111111118" + "</xsd:data>"
+'SoapRequest = SoapRequest + chr(13) + "      <xsd:data>" + data_string + "</xsd:data>"
+SoapRequest = SoapRequest + Chr(13) + "      <xsd:userName>" + "P92374" + "</xsd:userName>"
+'SoapRequest = SoapRequest + chr(13) + "      <xsd:userName>" + userName_string + "</xsd:userName>"
+SoapRequest = SoapRequest + Chr(13) + "    </ns1:protect>"
+SoapRequest = SoapRequest + Chr(13) + "  </soapenv:Body>"
+SoapRequest = SoapRequest + Chr(13) + "</soapenv:Envelope>"
+
+SoapRequest = Replace( SoapRequest, "'", Chr(34) )
+
+'Send soap request
+SoapReturnCode = 0
+SoapTransport = "http"'http://schemas.xmlsoap.org/soap/http
+SoapEndPointUri = "https://uat-taas1.liaison.com:8443/TokenManagerEngine/services/TokenService-rl2.6"
+SoapAction = ""
+
+'if (lcase(SoapTransport) = "http") then
+
+SoapReturnCode = SoapRequestSendHttp(SoapEndPointUri, SoapAction, SoapRequest, SoapResponse,pc,ps,hh,soap_response_error_message,5000)
+
+OutputDebugString("return code: " + Str(SoapReturnCode))
+OutputDebugString("soap response: " + SoapResponse)
+MessageBox("return code: ", Str(SoapReturnCode),4,0)
+MessageBox("soap response: ",  SoapResponse,4,0)
+
+'end if
+
+'Proces soap response using function SoapResponseGetParam()
+If (SoapReturnCode = 200) Then 
+
+	token() = SoapResponseGetParam(SoapResponse,"protectResponse.protectReturn.token",soap_response_error_message,0)
+	MessageBox("token: ",  token(0),4,0)
+
+EndIf 
+

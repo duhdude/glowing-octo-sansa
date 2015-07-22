@@ -1,0 +1,25 @@
+﻿Global Order as OrderStructure
+Global Customer as CustomerStructure
+mode1=""
+Order.sNumber = ""
+Order.sDate = ""
+Order.sStatus = ""
+
+Customer.sNumber = ""
+Customer.sName1 = ""
+Customer.sName2 = ""
+Customer.sName3 = ""
+Customer.sStreet = ""
+Customer.sState = ""
+Customer.sCity = ""
+Customer.sPostalCode = ""
+Customer.sCountry = ""
+'LoadTexts()
+'Wait(1)
+If Trim(@"@&ORDMSG@") = "xx" Then 
+	sysmsg = ""
+Else 
+	sysmsg = @"@&ORDMSG@"
+EndIf 
+
+End

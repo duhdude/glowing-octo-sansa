@@ -1,0 +1,44 @@
+﻿PanelFieldGetDataList("(LIST)",lstdta, - 5)
+PanelFieldGetDataList("(LIST)",lstdta2, - 1)
+'MessageBox(lstdta,lstdta2,4,0)
+lstdta2 = StrItem(lstdta2,3,Chr(9))
+pos1 = Instr(1,lstdta2,"T#")
+If pos1 <> 0 Then 
+	viatype = Mid(lstdta2,9,2)
+	lstdta2 = Mid(lstdta2,pos1 + 3,26)
+	lstdta2 = Trim(lstdta2)
+	'MessageBox(viatype,lstdta2,4,0)
+	If (Left(lstdta2,4) = "9161") And (Len(lstdta2) = 22) Then 
+		Goto end_script
+	EndIf 
+	If (Left(lstdta,4) = "9199") And (Len(lstdta2) = 22) Then 
+		Goto end_script
+	EndIf 
+	If (Left(lstdta2,5) = "92055") And (Len(lstdta2) = 22) Then 
+		uspsurl = "https://tools.usps.com/go/TrackConfirmAction?tLabels=" + lstdta2
+		UrlOpen(uspsurl,"_blank")
+		Goto end_script
+	EndIf 
+	If (viatype > "69") And (viatype < "94") Then 
+		fedexurl = "https://www.fedex.com/apps/fedextrack/?tracknumbers=" + lstdta2 + "&cntry_code=us"
+		UrlOpen(fedexurl,"_blank")
+		Goto end_script
+	EndIf 
+EndIf 
+
+pos1 = Instr(1,lstdta,"1")
+'MessageBox(Str(pos1),lstdta2,4,0)
+PanelFieldGetDataList("(LIST)",lstline, pos1 - 2)
+pos1 = Instr(1,lstline,"FedEx")
+'MessageBox(Str(pos1),lstline,4,0)
+If pos1 <> 0 Then 
+	lstdta2 = Mid(lstdta2,4,99)
+	lstdta2 = Trim(lstdta2)
+	fedexurl = "https://www.fedex.com/apps/fedextrack/?tracknumbers=" + lstdta2 + "&cntry_code=us"
+	UrlOpen(fedexurl,"_blank")
+EndIf 
+'MessageBox(Str(pos1),lstdta2,4,0)
+
+end_script: 
+
+End 

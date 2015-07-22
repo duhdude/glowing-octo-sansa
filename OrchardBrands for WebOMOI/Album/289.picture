@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?VersionInfo version="1.1" buildnumber="7.0.181" exename="lscollector.exe" exeversion="7.0.181.0" ?>
+<header xmlns="http://www.seagullsoftware.com/schemas/legasuite/screendefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screendefinition1_1.xsd" layout_version="1.1" creation_date_time="2015-02-24T15:14:14" application="collector" application_version="7.0.181.0">
+	<screen originator="LegaSuiteCollectorAwhost" name="AW000076" library="SEADSPF   " member_name="NCS00092# " message_line_y="10">
+		<size cx="80" cy="24"/>
+		<action key="f3"/>
+		<action key="f12"/>
+		<action key="enter"/>
+		<field field_type="window" window_type="fixed_position_generated_border">
+			<area>
+				<position x="14" y="6"/>
+				<size cx="64" cy="13"/>
+			</area>
+			<window_border border_characters="        " reverse_image="true"/>
+			<field field_type="window_border">
+				<field field_type="fixed_text" value="                                                                " data_length="64" display_length="64" reverse_image="true">
+					<area>
+						<position x="0" y="0"/>
+						<size cx="64" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="1"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="63" y="1"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="2"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="63" y="2"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="3"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="63" y="3"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="4"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="63" y="4"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="5"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="63" y="5"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="6"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="63" y="6"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="7"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="63" y="7"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="8"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="63" y="8"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="9"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="63" y="9"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="10"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="63" y="10"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="11"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="63" y="11"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value="                                                                " data_length="64" display_length="64" reverse_image="true">
+					<area>
+						<position x="0" y="12"/>
+						<size cx="64" cy="1"/>
+					</area>
+				</field>
+			</field>
+			<field field_type="screen_part" name="HABANDO   " overlay="single">
+				<area>
+					<position x="0" y="2"/>
+					<size cx="64" cy="8"/>
+				</area>
+				<field field_type="fixed_text" display_length="47" data_length="47" value="This is a SPLIT WEB Order Between CP and HABAND">
+					<area>
+						<position x="3" y="0"/>
+						<size cx="47" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" display_length="10" data_length="10" value="CP Order#:">
+					<area>
+						<position x="3" y="2"/>
+						<size cx="10" cy="1"/>
+					</area>
+				</field>
+				<field field_type="field" data_type="zoned_decimal" usage="output" name="CPORD#    " display_length="8" data_length="8">
+					<area>
+						<position x="14" y="2"/>
+						<size cx="8" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+				<field field_type="fixed_text" display_length="14" data_length="14" value="HABAND Order#:">
+					<area>
+						<position x="26" y="2"/>
+						<size cx="14" cy="1"/>
+					</area>
+				</field>
+				<field field_type="field" data_type="alphanumeric" usage="output" name="HBORD#    " display_length="10" data_length="10">
+					<area>
+						<position x="41" y="2"/>
+						<size cx="10" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+				<field field_type="fixed_text" display_length="11" data_length="11" value="Order Date:">
+					<area>
+						<position x="3" y="4"/>
+						<size cx="11" cy="1"/>
+					</area>
+				</field>
+				<field field_type="field" data_type="alphanumeric" usage="output" name="ORDDATE   " display_length="10" data_length="10">
+					<area>
+						<position x="15" y="4"/>
+						<size cx="10" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+				<field field_type="fixed_text" display_length="14" data_length="14" value="Customer Name:">
+					<area>
+						<position x="3" y="6"/>
+						<size cx="14" cy="1"/>
+					</area>
+				</field>
+				<field field_type="field" data_type="alphanumeric" usage="output" name="CUSTNM    " display_length="41" data_length="41">
+					<area>
+						<position x="18" y="6"/>
+						<size cx="41" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+			</field>
+			<field field_type="screen_part">
+				<field field_type="fixed_text" display_length="27" data_length="27" value="Press Enter to Clear Screen">
+					<area>
+						<position x="3" y="10"/>
+						<size cx="27" cy="1"/>
+					</area>
+				</field>
+				<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name=".SFLMSGREC" display_length="60" data_length="60">
+					<area>
+						<position x="2" y="11"/>
+						<size cx="60" cy="1"/>
+					</area>
+				</field>
+			</field>
+		</field>
+	</screen>
+</header>

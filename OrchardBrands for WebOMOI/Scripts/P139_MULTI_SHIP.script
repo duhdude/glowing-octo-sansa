@@ -1,0 +1,15 @@
+﻿Global Customer as CustomerStructure
+
+PanelLock()
+PanelUpdateEnable(0)
+Customer.sAddress2 = ""
+Customer.sAddress3 = ""
+Customer.sAddress4 = ""
+
+HostScreenSendKey("F19")
+HostWaitII(10)
+HostScreenSendKey("F19")
+HostWaitII(10)
+PanelUnLock()
+PanelUpdateEnable(7)
+End

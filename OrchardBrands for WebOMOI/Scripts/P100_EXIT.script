@@ -1,0 +1,19 @@
+﻿PanelUpdateEnable(0)
+HostScreenSendKey("F3")
+HostWaitII(10)
+If ScreenIdGet() = "(100)" Then 
+	HostScreenSendKey("F3")
+	HostWaitII(10)
+EndIf 
+If ScreenIdGet() = "(139)" Then 
+	If sw2 = 0 Then 
+		If (Instr(1,@"@(MESSAGE)@","Coordinate") > 0) and (trim(@"@RESVNUM@") > "0" ) Then 
+			HostCursorPut(14,2)
+			HostScreenPutString("14")
+			HostScreenSendKey("ENTER")
+			HostWaitII(10)
+			sw2 = 1
+		EndIf 
+	EndIf 
+EndIf 
+End

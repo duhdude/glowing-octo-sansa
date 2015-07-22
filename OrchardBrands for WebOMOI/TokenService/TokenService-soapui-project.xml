@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="967b32d7-21f7-4325-bda4-f5838e039a7c" activeEnvironment="Default" name="TokenService" resourceRoot="" soapui-version="5.1.2" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="76a5403b-a762-418d-9a4f-535bb94fa6cc" wsaVersion="NONE" name="TokenService-rl2.6SoapBinding" type="wsdl" bindingName="{http://webservice.tokenmanager.nubridges.com}TokenService-rl2.6SoapBinding" soapVersion="1_1" anonymous="optional" definition="file:/C:/Seagull%20Projects/workspace_OrchardBrands/OrchardBrands%20for%20Web/TokenService/TokenService-rl2.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Seagull%20Projects\workspace_OrchardBrands\OrchardBrands%20for%20Web\TokenService\TokenService-rl2.wsdl"><con:part><con:url>file:\C:\Seagull%20Projects\workspace_OrchardBrands\OrchardBrands%20for%20Web\TokenService\TokenService-rl2.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://webservice.tokenmanager.nubridges.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://webservice.tokenmanager.nubridges.com" xmlns:intf="http://webservice.tokenmanager.nubridges.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+  <wsdl:types>
+    <schema targetNamespace="http://webservice.tokenmanager.nubridges.com" xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+      <complexType name="ResponseData">
+        <sequence>
+          <element name="deletedTokenCount" nillable="true" type="xsd:int"/>
+          <element name="head" nillable="true" type="xsd:string"/>
+          <element name="sensitiveData" nillable="true" type="xsd:string"/>
+          <element name="sensitiveDataLength" nillable="true" type="xsd:int"/>
+          <element name="statusCode" nillable="true" type="xsd:int"/>
+          <element name="statusMessage" nillable="true" type="xsd:string"/>
+          <element name="tail" nillable="true" type="xsd:string"/>
+          <element name="timeTaken" nillable="true" type="xsd:long"/>
+          <element name="token" nillable="true" type="xsd:string"/>
+        </sequence>
+      </complexType>
+      <complexType name="ArrayOf_xsd_string">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="item" type="xsd:string"/>
+        </sequence>
+      </complexType>
+      <complexType name="ArrayOfResponseData">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="item" type="impl:ResponseData"/>
+        </sequence>
+      </complexType>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="sendToWasteBasketBulkRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="tokens" type="impl:ArrayOf_xsd_string"/>
+  </wsdl:message>
+  <wsdl:message name="revealBulkRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="token" type="impl:ArrayOf_xsd_string"/>
+    <wsdl:part name="userName" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="protectCipherRequest1">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="encryptedData" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="revealCipherBulkRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="token" type="impl:ArrayOf_xsd_string"/>
+    <wsdl:part name="userName" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="sendToWasteBasketBulkResponse">
+    <wsdl:part name="sendToWasteBasketBulkReturn" type="impl:ArrayOfResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="protectResponse">
+    <wsdl:part name="protectReturn" type="impl:ResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="retrieveFromWasteBasketResponse">
+    <wsdl:part name="retrieveFromWasteBasketReturn" type="impl:ResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="revealCipherBulkResponse">
+    <wsdl:part name="revealCipherBulkReturn" type="impl:ArrayOfResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="protectCipherRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="encryptedData" type="xsd:string"/>
+    <wsdl:part name="userName" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="protectRequest1">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="data" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="protectRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="data" type="xsd:string"/>
+    <wsdl:part name="userName" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="lookupTokenBulkRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="data" type="impl:ArrayOf_xsd_string"/>
+  </wsdl:message>
+  <wsdl:message name="protectCipherBulkRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="encryptedData" type="impl:ArrayOf_xsd_string"/>
+    <wsdl:part name="userName" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="lookupTokensResponse">
+    <wsdl:part name="lookupTokensReturn" type="impl:ArrayOfResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="sendToWasteBasketResponse">
+    <wsdl:part name="sendToWasteBasketReturn" type="impl:ResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="revealCipherResponse">
+    <wsdl:part name="revealCipherReturn" type="impl:ResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="revealResponse">
+    <wsdl:part name="revealReturn" type="impl:ResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="retrieveFromWasteBasketBulkRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="tokens" type="impl:ArrayOf_xsd_string"/>
+  </wsdl:message>
+  <wsdl:message name="emptyWasteBasketRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="protectCipherResponse">
+    <wsdl:part name="protectCipherReturn" type="impl:ResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="protectBulkRequest1">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="data" type="impl:ArrayOf_xsd_string"/>
+  </wsdl:message>
+  <wsdl:message name="protectBulkResponse">
+    <wsdl:part name="protectBulkReturn" type="impl:ArrayOfResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="purgeTokensResponse">
+    <wsdl:part name="purgeTokensReturn" type="impl:ResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="lookupTokensRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="data" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="lookupTokenRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="data" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="protectBulkResponse1">
+    <wsdl:part name="protectBulkReturn" type="impl:ArrayOfResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="protectCipherResponse1">
+    <wsdl:part name="protectCipherReturn" type="impl:ResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="protectCipherBulkRequest1">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="encryptedData" type="impl:ArrayOf_xsd_string"/>
+  </wsdl:message>
+  <wsdl:message name="purgeTokensRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="date" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="lookupTokenBulkResponse">
+    <wsdl:part name="lookupTokenBulkReturn" type="impl:ArrayOfResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="lookupTokenResponse">
+    <wsdl:part name="lookupTokenReturn" type="impl:ResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="retrieveFromWasteBasketRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="token" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="protectBulkRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="data" type="impl:ArrayOf_xsd_string"/>
+    <wsdl:part name="userName" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="protectCipherBulkResponse1">
+    <wsdl:part name="protectCipherBulkReturn" type="impl:ArrayOfResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="revealCipherRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="token" type="xsd:string"/>
+    <wsdl:part name="userName" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="sendToWasteBasketRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="token" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="revealBulkResponse">
+    <wsdl:part name="revealBulkReturn" type="impl:ArrayOfResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="emptyWasteBasketResponse">
+    <wsdl:part name="emptyWasteBasketReturn" type="impl:ResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="protectResponse1">
+    <wsdl:part name="protectReturn" type="impl:ResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="protectCipherBulkResponse">
+    <wsdl:part name="protectCipherBulkReturn" type="impl:ArrayOfResponseData"/>
+  </wsdl:message>
+  <wsdl:message name="revealRequest">
+    <wsdl:part name="apiKey" type="xsd:string"/>
+    <wsdl:part name="protectionStrategyName" type="xsd:string"/>
+    <wsdl:part name="token" type="xsd:string"/>
+    <wsdl:part name="userName" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="retrieveFromWasteBasketBulkResponse">
+    <wsdl:part name="retrieveFromWasteBasketBulkReturn" type="impl:ArrayOfResponseData"/>
+  </wsdl:message>
+  <wsdl:portType name="TokenManagerWebServicerl26">
+    <wsdl:operation name="revealCipher" parameterOrder="apiKey protectionStrategyName token userName">
+      <wsdl:input message="impl:revealCipherRequest" name="revealCipherRequest"/>
+      <wsdl:output message="impl:revealCipherResponse" name="revealCipherResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="revealCipherBulk" parameterOrder="apiKey protectionStrategyName token userName">
+      <wsdl:input message="impl:revealCipherBulkRequest" name="revealCipherBulkRequest"/>
+      <wsdl:output message="impl:revealCipherBulkResponse" name="revealCipherBulkResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="lookupTokenBulk" parameterOrder="apiKey protectionStrategyName data">
+      <wsdl:input message="impl:lookupTokenBulkRequest" name="lookupTokenBulkRequest"/>
+      <wsdl:output message="impl:lookupTokenBulkResponse" name="lookupTokenBulkResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="protectCipher" parameterOrder="apiKey protectionStrategyName encryptedData userName">
+      <wsdl:input message="impl:protectCipherRequest" name="protectCipherRequest"/>
+      <wsdl:output message="impl:protectCipherResponse" name="protectCipherResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="protectCipher" parameterOrder="apiKey protectionStrategyName encryptedData">
+      <wsdl:input message="impl:protectCipherRequest1" name="protectCipherRequest1"/>
+      <wsdl:output message="impl:protectCipherResponse1" name="protectCipherResponse1"/>
+    </wsdl:operation>
+    <wsdl:operation name="protectBulk" parameterOrder="apiKey protectionStrategyName data userName">
+      <wsdl:input message="impl:protectBulkRequest" name="protectBulkRequest"/>
+      <wsdl:output message="impl:protectBulkResponse" name="protectBulkResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="protectBulk" parameterOrder="apiKey protectionStrategyName data">
+      <wsdl:input message="impl:protectBulkRequest1" name="protectBulkRequest1"/>
+      <wsdl:output message="impl:protectBulkResponse1" name="protectBulkResponse1"/>
+    </wsdl:operation>
+    <wsdl:operation name="protectCipherBulk" parameterOrder="apiKey protectionStrategyName encryptedData userName">
+      <wsdl:input message="impl:protectCipherBulkRequest" name="protectCipherBulkRequest"/>
+      <wsdl:output message="impl:protectCipherBulkResponse" name="protectCipherBulkResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="protectCipherBulk" parameterOrder="apiKey protectionStrategyName encryptedData">
+      <wsdl:input message="impl:protectCipherBulkRequest1" name="protectCipherBulkRequest1"/>
+      <wsdl:output message="impl:protectCipherBulkResponse1" name="protectCipherBulkResponse1"/>
+    </wsdl:operation>
+    <wsdl:operation name="protect" parameterOrder="apiKey protectionStrategyName data userName">
+      <wsdl:input message="impl:protectRequest" name="protectRequest"/>
+      <wsdl:output message="impl:protectResponse" name="protectResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="protect" parameterOrder="apiKey protectionStrategyName data">
+      <wsdl:input message="impl:protectRequest1" name="protectRequest1"/>
+      <wsdl:output message="impl:protectResponse1" name="protectResponse1"/>
+    </wsdl:operation>
+    <wsdl:operation name="lookupTokens" parameterOrder="apiKey protectionStrategyName data">
+      <wsdl:input message="impl:lookupTokensRequest" name="lookupTokensRequest"/>
+      <wsdl:output message="impl:lookupTokensResponse" name="lookupTokensResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="purgeTokens" parameterOrder="apiKey protectionStrategyName date">
+      <wsdl:input message="impl:purgeTokensRequest" name="purgeTokensRequest"/>
+      <wsdl:output message="impl:purgeTokensResponse" name="purgeTokensResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="reveal" parameterOrder="apiKey protectionStrategyName token userName">
+      <wsdl:input message="impl:revealRequest" name="revealRequest"/>
+      <wsdl:output message="impl:revealResponse" name="revealResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="lookupToken" parameterOrder="apiKey protectionStrategyName data">
+      <wsdl:input message="impl:lookupTokenRequest" name="lookupTokenRequest"/>
+      <wsdl:output message="impl:lookupTokenResponse" name="lookupTokenResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="emptyWasteBasket" parameterOrder="apiKey protectionStrategyName">
+      <wsdl:input message="impl:emptyWasteBasketRequest" name="emptyWasteBasketRequest"/>
+      <wsdl:output message="impl:emptyWasteBasketResponse" name="emptyWasteBasketResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="revealBulk" parameterOrder="apiKey protectionStrategyName token userName">
+      <wsdl:input message="impl:revealBulkRequest" name="revealBulkRequest"/>
+      <wsdl:output message="impl:revealBulkResponse" name="revealBulkResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="sendToWasteBasket" parameterOrder="apiKey protectionStrategyName token">
+      <wsdl:input message="impl:sendToWasteBasketRequest" name="sendToWasteBasketRequest"/>
+      <wsdl:output message="impl:sendToWasteBasketResponse" name="sendToWasteBasketResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="sendToWasteBasketBulk" parameterOrder="apiKey protectionStrategyName tokens">
+      <wsdl:input message="impl:sendToWasteBasketBulkRequest" name="sendToWasteBasketBulkRequest"/>
+      <wsdl:output message="impl:sendToWasteBasketBulkResponse" name="sendToWasteBasketBulkResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromWasteBasket" parameterOrder="apiKey protectionStrategyName token">
+      <wsdl:input message="impl:retrieveFromWasteBasketRequest" name="retrieveFromWasteBasketRequest"/>
+      <wsdl:output message="impl:retrieveFromWasteBasketResponse" name="retrieveFromWasteBasketResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromWasteBasketBulk" parameterOrder="apiKey protectionStrategyName tokens">
+      <wsdl:input message="impl:retrieveFromWasteBasketBulkRequest" name="retrieveFromWasteBasketBulkRequest"/>
+      <wsdl:output message="impl:retrieveFromWasteBasketBulkResponse" name="retrieveFromWasteBasketBulkResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TokenService-rl2.6SoapBinding" type="impl:TokenManagerWebServicerl26">
+    <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="revealCipher">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="revealCipherRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="revealCipherResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="revealCipherBulk">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="revealCipherBulkRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="revealCipherBulkResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="lookupTokenBulk">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="lookupTokenBulkRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="lookupTokenBulkResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="protectCipher">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="protectCipherRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="protectCipherResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="protectCipher">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="protectCipherRequest1">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="protectCipherResponse1">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="protectBulk">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="protectBulkRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="protectBulkResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="protectBulk">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="protectBulkRequest1">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="protectBulkResponse1">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="protectCipherBulk">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="protectCipherBulkRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="protectCipherBulkResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="protectCipherBulk">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="protectCipherBulkRequest1">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="protectCipherBulkResponse1">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="protect">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="protectRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="protectResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="protect">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="protectRequest1">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="protectResponse1">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="lookupTokens">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="lookupTokensRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="lookupTokensResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="purgeTokens">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="purgeTokensRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="purgeTokensResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reveal">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="revealRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="revealResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="lookupToken">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="lookupTokenRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="lookupTokenResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="emptyWasteBasket">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="emptyWasteBasketRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="emptyWasteBasketResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="revealBulk">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="revealBulkRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="revealBulkResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendToWasteBasket">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="sendToWasteBasketRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="sendToWasteBasketResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendToWasteBasketBulk">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="sendToWasteBasketBulkRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="sendToWasteBasketBulkResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromWasteBasket">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="retrieveFromWasteBasketRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="retrieveFromWasteBasketResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveFromWasteBasketBulk">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="retrieveFromWasteBasketBulkRequest">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="retrieveFromWasteBasketBulkResponse">
+        <wsdlsoap:body namespace="http://webservice.tokenmanager.nubridges.com" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TokenService-rl2.6">
+    <wsdl:port binding="impl:TokenService-rl2.6SoapBinding" name="TokenService-rl2.6">
+      <wsdlsoap:address location="https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint></con:endpoints><con:operation id="91e90bc4-04f4-454f-89a9-c829e6a17ee9" isOneWay="false" action="" name="emptyWasteBasket" bindingOperationName="emptyWasteBasket" type="Request-Response" outputName="emptyWasteBasketResponse" inputName="emptyWasteBasketRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ad94c2a0-5d8d-4fd8-85a0-77b8c25b5de4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:emptyWasteBasket>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+      </web:emptyWasteBasket>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/emptyWasteBasketRequest"/></con:call></con:operation><con:operation id="363c4ced-1f4b-4a8c-812d-6261caa8e129" isOneWay="false" action="" name="lookupToken" bindingOperationName="lookupToken" type="Request-Response" outputName="lookupTokenResponse" inputName="lookupTokenRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f3944d76-eb56-47c5-8534-82dec55ee368" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:lookupToken>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <data>?</data>\r
+      </web:lookupToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/lookupTokenRequest"/></con:call></con:operation><con:operation id="828399fb-ccff-42c2-b493-8494a2445d6b" isOneWay="false" action="" name="lookupTokenBulk" bindingOperationName="lookupTokenBulk" type="Request-Response" outputName="lookupTokenBulkResponse" inputName="lookupTokenBulkRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="34927c69-71eb-4833-a383-1415798994e0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:lookupTokenBulk>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <data>\r
+            <!--Zero or more repetitions:-->\r
+            <item>?</item>\r
+         </data>\r
+      </web:lookupTokenBulk>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/lookupTokenBulkRequest"/></con:call></con:operation><con:operation id="60604728-c7e2-49e2-a34f-17d7157bd5cd" isOneWay="false" action="" name="lookupTokens" bindingOperationName="lookupTokens" type="Request-Response" outputName="lookupTokensResponse" inputName="lookupTokensRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4a0b8689-f805-4341-89b7-0d751861e5df" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:lookupTokens>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <data>?</data>\r
+      </web:lookupTokens>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/lookupTokensRequest"/></con:call></con:operation><con:operation id="bd191304-a219-42e4-87ba-d3bb07cb3ec3" isOneWay="false" action="" name="protect" bindingOperationName="protect" type="Request-Response" outputName="protectResponse" inputName="protectRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4087ac92-83b1-449e-94fd-88bc8bf18c3c" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://uat-taas1.liaison.com:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:protect>
+         <apiKey>MTQxOTk1OTkzOTg0NU9yY2hhcjE0MDkzNzY2MTQ=</apiKey>
+         <protectionStrategyName>ROUPEM_CCALPHA</protectionStrategyName>
+         <data>4444333322221111</data>
+         <userName>P92374</userName>
+      </web:protect>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="5237a86b-9f90-4bf0-aa03-32b7ec49c812" isOneWay="false" action="" name="protect" bindingOperationName="protect" type="Request-Response" outputName="protectResponse1" inputName="protectRequest1" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c79a824e-58e8-4351-804a-960a1cd94831" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:protect>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <data>?</data>\r
+      </web:protect>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="05bab549-0d6b-4d37-a9a1-c186b1176cf3" isOneWay="false" action="" name="protectBulk" bindingOperationName="protectBulk" type="Request-Response" outputName="protectBulkResponse" inputName="protectBulkRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cb93e5d8-d88c-4e9b-bd2a-0c39e8920fe0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:protectBulk>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <data>\r
+            <!--Zero or more repetitions:-->\r
+            <item>?</item>\r
+         </data>\r
+         <userName>?</userName>\r
+      </web:protectBulk>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508"/></con:call></con:operation><con:operation id="b0c8a537-1250-4f0d-ba1b-9a1f0b45b86f" isOneWay="false" action="" name="protectBulk" bindingOperationName="protectBulk" type="Request-Response" outputName="protectBulkResponse1" inputName="protectBulkRequest1" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="48431e5d-c367-47c2-b50c-7ef4bffea964" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:protectBulk>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <data>\r
+            <!--Zero or more repetitions:-->\r
+            <item>?</item>\r
+         </data>\r
+      </web:protectBulk>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508"/></con:call></con:operation><con:operation id="16074987-2a08-4324-8fd5-06dd790b2f17" isOneWay="false" action="" name="protectCipher" bindingOperationName="protectCipher" type="Request-Response" outputName="protectCipherResponse" inputName="protectCipherRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b3988db4-4258-460a-8aa1-e4ae4a8bf6c3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:protectCipher>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <encryptedData>?</encryptedData>\r
+         <userName>?</userName>\r
+      </web:protectCipher>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508"/></con:call></con:operation><con:operation id="c03f07c5-f1ea-41b3-bd9c-f14eeb90d84f" isOneWay="false" action="" name="protectCipher" bindingOperationName="protectCipher" type="Request-Response" outputName="protectCipherResponse1" inputName="protectCipherRequest1" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="01e03e2a-1836-4462-850d-2aa19b7f39f1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:protectCipher>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <encryptedData>?</encryptedData>\r
+      </web:protectCipher>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508"/></con:call></con:operation><con:operation id="8dcafd0a-30c7-417a-828a-da29ac371f6b" isOneWay="false" action="" name="protectCipherBulk" bindingOperationName="protectCipherBulk" type="Request-Response" outputName="protectCipherBulkResponse" inputName="protectCipherBulkRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f5431aaf-8186-4cd4-82ea-52001b3618a6" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:protectCipherBulk>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <encryptedData>\r
+            <!--Zero or more repetitions:-->\r
+            <item>?</item>\r
+         </encryptedData>\r
+         <userName>?</userName>\r
+      </web:protectCipherBulk>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508"/></con:call></con:operation><con:operation id="1d20845b-c07e-4e54-a722-999b133d0efa" isOneWay="false" action="" name="protectCipherBulk" bindingOperationName="protectCipherBulk" type="Request-Response" outputName="protectCipherBulkResponse1" inputName="protectCipherBulkRequest1" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="90710c8d-6939-412e-b615-1ed42ac52cee" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:protectCipherBulk>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <encryptedData>\r
+            <!--Zero or more repetitions:-->\r
+            <item>?</item>\r
+         </encryptedData>\r
+      </web:protectCipherBulk>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508"/></con:call></con:operation><con:operation id="221c5d22-92d5-4e5a-b683-100e60f682e3" isOneWay="false" action="" name="purgeTokens" bindingOperationName="purgeTokens" type="Request-Response" outputName="purgeTokensResponse" inputName="purgeTokensRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="39829b95-6aab-4c52-8884-ecfa4d60f5bf" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:purgeTokens>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <date>?</date>\r
+      </web:purgeTokens>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/purgeTokensRequest"/></con:call></con:operation><con:operation id="8d4a2860-d3f0-48e6-81f1-e8a2a49e104c" isOneWay="false" action="" name="retrieveFromWasteBasket" bindingOperationName="retrieveFromWasteBasket" type="Request-Response" outputName="retrieveFromWasteBasketResponse" inputName="retrieveFromWasteBasketRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e548d25a-55c3-43d9-b726-0e851642f1ed" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:retrieveFromWasteBasket>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <token>?</token>\r
+      </web:retrieveFromWasteBasket>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/retrieveFromWasteBasketRequest"/></con:call></con:operation><con:operation id="501226cb-6c7a-417e-b814-8fdf5a17be6b" isOneWay="false" action="" name="retrieveFromWasteBasketBulk" bindingOperationName="retrieveFromWasteBasketBulk" type="Request-Response" outputName="retrieveFromWasteBasketBulkResponse" inputName="retrieveFromWasteBasketBulkRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="44d7c597-8efd-46f8-bede-c5609069ab5f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:retrieveFromWasteBasketBulk>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <tokens>\r
+            <!--Zero or more repetitions:-->\r
+            <item>?</item>\r
+         </tokens>\r
+      </web:retrieveFromWasteBasketBulk>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/retrieveFromWasteBasketBulkRequest"/></con:call></con:operation><con:operation id="0665ba05-70dd-4b93-8684-1240b7c2a4fc" isOneWay="false" action="" name="reveal" bindingOperationName="reveal" type="Request-Response" outputName="revealResponse" inputName="revealRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fdb2d5de-17ed-4e8b-a46f-d644c94db7d1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:reveal>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <token>?</token>\r
+         <userName>?</userName>\r
+      </web:reveal>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/revealRequest"/></con:call></con:operation><con:operation id="2f7889f4-ce19-4492-b7cf-a21099cd858d" isOneWay="false" action="" name="revealBulk" bindingOperationName="revealBulk" type="Request-Response" outputName="revealBulkResponse" inputName="revealBulkRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6fee63c0-53c6-486c-bba0-dae48c13bc0c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:revealBulk>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <token>\r
+            <!--Zero or more repetitions:-->\r
+            <item>?</item>\r
+         </token>\r
+         <userName>?</userName>\r
+      </web:revealBulk>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/revealBulkRequest"/></con:call></con:operation><con:operation id="1e245843-7781-4be5-b16a-ffb78b7fb98a" isOneWay="false" action="" name="revealCipher" bindingOperationName="revealCipher" type="Request-Response" outputName="revealCipherResponse" inputName="revealCipherRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0fa2d2fb-5a82-46eb-9f01-4750f7e2e399" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:revealCipher>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <token>?</token>\r
+         <userName>?</userName>\r
+      </web:revealCipher>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/revealCipherRequest"/></con:call></con:operation><con:operation id="e93b6a79-fc29-43c0-970f-a20c3317a1ad" isOneWay="false" action="" name="revealCipherBulk" bindingOperationName="revealCipherBulk" type="Request-Response" outputName="revealCipherBulkResponse" inputName="revealCipherBulkRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5dcf3ae2-af38-4884-b9e3-ec2de396e66a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:revealCipherBulk>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <token>\r
+            <!--Zero or more repetitions:-->\r
+            <item>?</item>\r
+         </token>\r
+         <userName>?</userName>\r
+      </web:revealCipherBulk>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/revealCipherBulkRequest"/></con:call></con:operation><con:operation id="00188c56-7cf1-42da-9543-031ebc01a815" isOneWay="false" action="" name="sendToWasteBasket" bindingOperationName="sendToWasteBasket" type="Request-Response" outputName="sendToWasteBasketResponse" inputName="sendToWasteBasketRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7ed7817b-890b-4320-a133-558486d41087" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:sendToWasteBasket>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <token>?</token>\r
+      </web:sendToWasteBasket>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/sendToWasteBasketRequest"/></con:call></con:operation><con:operation id="1ee425ba-d054-4e13-b955-ebd4f3b6f15a" isOneWay="false" action="" name="sendToWasteBasketBulk" bindingOperationName="sendToWasteBasketBulk" type="Request-Response" outputName="sendToWasteBasketBulkResponse" inputName="sendToWasteBasketBulkRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c3b1eb6e-328f-4007-a035-82bf9919d557" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.0.66.25:8443/TokenManagerEngine/services/TokenService-rl2.6</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://webservice.tokenmanager.nubridges.com">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:sendToWasteBasketBulk>\r
+         <apiKey>?</apiKey>\r
+         <protectionStrategyName>?</protectionStrategyName>\r
+         <tokens>\r
+            <!--Zero or more repetitions:-->\r
+            <item>?</item>\r
+         </tokens>\r
+      </web:sendToWasteBasketBulk>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://webservice.tokenmanager.nubridges.com/TokenManagerWebServicerl26/sendToWasteBasketBulkRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting></con:soapui-project>

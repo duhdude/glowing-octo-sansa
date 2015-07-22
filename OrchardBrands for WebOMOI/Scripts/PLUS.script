@@ -1,0 +1,13 @@
+﻿HostFieldGetData(fld1,qty1)
+If Trim(qty1) = "" Then 
+	qty2 = "1"
+Else 
+	If Val(qty2) = 5 Then 
+		qty2 = "5"
+	Else 
+		qty2 = Str(Val(qty2) + 1)
+	EndIf 
+EndIf 
+HostFieldPutData(fld1,0,qty2)
+PanelUpdateEnable(7)
+End 

@@ -1,0 +1,15 @@
+﻿#
+# Tue Oct 21 17:51:56 CEST 2014
+# DEV is being used during LSWB development
+#
+BidiOisReturnsLogical=1
+Emulator=Seagull5250
+EmulatorConnect=TcpIp
+EmulatorSystem=127.0.0.1
+EmulatorSystemPort=23
+WideScreen=1
+Ccsid=37
+ServerPort=1291
+SmcEnable=1
+RestApiEnable=1
+OutputDebugStringEnable=1

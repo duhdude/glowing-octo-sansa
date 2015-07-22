@@ -1,0 +1,4 @@
+﻿scankey="F6"
+HostScreenSendKey("F2")
+HostWaitII(5)
+End

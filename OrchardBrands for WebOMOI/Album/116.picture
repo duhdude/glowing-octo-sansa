@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?VersionInfo version="1.1" buildnumber="7.0.171" exename="lscollector.exe" exeversion="7.0.171.0" ?>
+<header xmlns="http://www.seagullsoftware.com/schemas/legasuite/screendefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screendefinition1_1.xsd" layout_version="1.1" creation_date_time="2014-06-16T08:50:47" application="collector" application_version="7.0.171.0">
+	<screen originator="LegaSuiteCollectorAwhost" name="AW000116" library="SEADSPF   " member_name="NOE00037# " message_line_y="24">
+		<size cx="80" cy="24"/>
+		<action key="f3"/>
+		<action key="enter"/>
+		<field field_type="screen_part" name="SUBCTL    " overlay="true">
+			<area>
+				<position x="0" y="0"/>
+				<size cx="80" cy="21"/>
+			</area>
+			<field field_type="subfile_container">
+				<field field_type="subfile_header">
+					<field field_type="fixed_text" display_length="8" data_length="8" value="NOE00037">
+						<area>
+							<position x="1" y="0"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" high_intensity="true" display_length="23" data_length="23" value="Duplicate Selection for">
+						<area>
+							<position x="24" y="0"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="SCVALH    " display_length="5" data_length="5">
+						<area>
+							<position x="48" y="0"/>
+							<size cx="5" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="output" name="*TIME     " display_length="8" data_length="6">
+						<area>
+							<position x="71" y="0"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="9" data_length="9" value="NOE00037#">
+						<area>
+							<position x="1" y="1"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="COMNAM    " display_length="30" data_length="30">
+						<area>
+							<position x="24" y="1"/>
+							<size cx="30" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="output" name="*DATE     " display_length="8" data_length="6">
+						<area>
+							<position x="71" y="1"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="alphanumeric" usage="output" high_intensity="true" name="SCVAL     " display_length="5" data_length="5">
+						<area>
+							<position x="1" y="3"/>
+							<size cx="5" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="1" data_length="1" value="-">
+						<area>
+							<position x="7" y="3"/>
+							<size cx="1" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" data_type="zoned_decimal" usage="output" high_intensity="true" name="SCNUM     " display_length="9" data_length="9">
+						<area>
+							<position x="10" y="3"/>
+							<size cx="9" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="26" data_length="26" value="Type options, press Enter.">
+						<area>
+							<position x="1" y="5"/>
+							<size cx="26" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" display_length="8" data_length="8" value="1=Select">
+						<area>
+							<position x="1" y="6"/>
+							<size cx="8" cy="1"/>
+						</area>
+					</field>
+					<field field_type="fixed_text" underline="true" display_length="78" data_length="78" value="   Name                    Address                 City/State/Zip          Div">
+						<area>
+							<position x="1" y="8"/>
+							<size cx="78" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" position_cursor="conditional" reverse_image="conditional" underline="true" name="SCOPT     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="9"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCNAME    " display_length="23" data_length="23">
+						<area>
+							<position x="4" y="9"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCADDR    " display_length="23" data_length="23">
+						<area>
+							<position x="28" y="9"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCCSZ     " display_length="22" data_length="22">
+						<area>
+							<position x="52" y="9"/>
+							<size cx="22" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCDIV     " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="9"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" position_cursor="conditional" reverse_image="conditional" underline="true" name="SCOPT     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="10"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCNAME    " display_length="23" data_length="23">
+						<area>
+							<position x="4" y="10"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCADDR    " display_length="23" data_length="23">
+						<area>
+							<position x="28" y="10"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCCSZ     " display_length="22" data_length="22">
+						<area>
+							<position x="52" y="10"/>
+							<size cx="22" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCDIV     " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="10"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" position_cursor="conditional" reverse_image="conditional" underline="true" name="SCOPT     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="11"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCNAME    " display_length="23" data_length="23">
+						<area>
+							<position x="4" y="11"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCADDR    " display_length="23" data_length="23">
+						<area>
+							<position x="28" y="11"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCCSZ     " display_length="22" data_length="22">
+						<area>
+							<position x="52" y="11"/>
+							<size cx="22" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCDIV     " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="11"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" position_cursor="conditional" reverse_image="conditional" underline="true" name="SCOPT     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="12"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCNAME    " display_length="23" data_length="23">
+						<area>
+							<position x="4" y="12"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCADDR    " display_length="23" data_length="23">
+						<area>
+							<position x="28" y="12"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCCSZ     " display_length="22" data_length="22">
+						<area>
+							<position x="52" y="12"/>
+							<size cx="22" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCDIV     " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="12"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" position_cursor="conditional" reverse_image="conditional" underline="true" name="SCOPT     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="13"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCNAME    " display_length="23" data_length="23">
+						<area>
+							<position x="4" y="13"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCADDR    " display_length="23" data_length="23">
+						<area>
+							<position x="28" y="13"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCCSZ     " display_length="22" data_length="22">
+						<area>
+							<position x="52" y="13"/>
+							<size cx="22" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCDIV     " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="13"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" position_cursor="conditional" reverse_image="conditional" underline="true" name="SCOPT     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="14"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCNAME    " display_length="23" data_length="23">
+						<area>
+							<position x="4" y="14"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCADDR    " display_length="23" data_length="23">
+						<area>
+							<position x="28" y="14"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCCSZ     " display_length="22" data_length="22">
+						<area>
+							<position x="52" y="14"/>
+							<size cx="22" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCDIV     " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="14"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" position_cursor="conditional" reverse_image="conditional" underline="true" name="SCOPT     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="15"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCNAME    " display_length="23" data_length="23">
+						<area>
+							<position x="4" y="15"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCADDR    " display_length="23" data_length="23">
+						<area>
+							<position x="28" y="15"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCCSZ     " display_length="22" data_length="22">
+						<area>
+							<position x="52" y="15"/>
+							<size cx="22" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCDIV     " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="15"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" position_cursor="conditional" reverse_image="conditional" underline="true" name="SCOPT     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="16"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCNAME    " display_length="23" data_length="23">
+						<area>
+							<position x="4" y="16"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCADDR    " display_length="23" data_length="23">
+						<area>
+							<position x="28" y="16"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCCSZ     " display_length="22" data_length="22">
+						<area>
+							<position x="52" y="16"/>
+							<size cx="22" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCDIV     " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="16"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" position_cursor="conditional" reverse_image="conditional" underline="true" name="SCOPT     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="17"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCNAME    " display_length="23" data_length="23">
+						<area>
+							<position x="4" y="17"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCADDR    " display_length="23" data_length="23">
+						<area>
+							<position x="28" y="17"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCCSZ     " display_length="22" data_length="22">
+						<area>
+							<position x="52" y="17"/>
+							<size cx="22" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCDIV     " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="17"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_record">
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" position_cursor="conditional" reverse_image="conditional" underline="true" name="SCOPT     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="18"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCNAME    " display_length="23" data_length="23">
+						<area>
+							<position x="4" y="18"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCADDR    " display_length="23" data_length="23">
+						<area>
+							<position x="28" y="18"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCCSZ     " display_length="22" data_length="22">
+						<area>
+							<position x="52" y="18"/>
+							<size cx="22" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCDIV     " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="18"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" position_cursor="conditional" reverse_image="conditional" underline="true" name="SCOPT     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="19"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCNAME    " display_length="23" data_length="23">
+						<area>
+							<position x="4" y="19"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCADDR    " display_length="23" data_length="23">
+						<area>
+							<position x="28" y="19"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCCSZ     " display_length="22" data_length="22">
+						<area>
+							<position x="52" y="19"/>
+							<size cx="22" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCDIV     " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="19"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="both" position_cursor="conditional" reverse_image="conditional" underline="true" name="SCOPT     " display_length="2" data_length="2">
+						<area>
+							<position x="1" y="20"/>
+							<size cx="2" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCNAME    " display_length="23" data_length="23">
+						<area>
+							<position x="4" y="20"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCADDR    " display_length="23" data_length="23">
+						<area>
+							<position x="28" y="20"/>
+							<size cx="23" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCCSZ     " display_length="22" data_length="22">
+						<area>
+							<position x="52" y="20"/>
+							<size cx="22" cy="1"/>
+						</area>
+					</field>
+					<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name="SCDIV     " display_length="3" data_length="3">
+						<area>
+							<position x="76" y="20"/>
+							<size cx="3" cy="1"/>
+						</area>
+					</field>
+				</field>
+				<field field_type="subfile_end_plus" conditional="true" name=".+IND     " display_length="1" data_length="1" value="+">
+					<area>
+						<position x="78" y="20"/>
+						<size cx="1" cy="1"/>
+					</area>
+					<color foreground="white"/>
+				</field>
+			</field>
+		</field>
+		<field field_type="screen_part" name="FMT       ">
+			<area>
+				<position x="0" y="21"/>
+				<size cx="80" cy="3"/>
+			</area>
+			<field field_type="fixed_text" display_length="78" data_length="78" value="______________________________________________________________________________">
+				<area>
+					<position x="1" y="0"/>
+					<size cx="78" cy="1"/>
+				</area>
+			</field>
+			<field field_type="fixed_text" display_length="7" data_length="7" value="F3=Exit">
+				<area>
+					<position x="1" y="1"/>
+					<size cx="7" cy="1"/>
+				</area>
+				<color foreground="blue"/>
+			</field>
+			<field field_type="field" data_type="alphanumeric" usage="output" non_display="conditional" reverse_image="conditional" name="MSG       " display_length="71" data_length="71">
+				<area>
+					<position x="0" y="2"/>
+					<size cx="71" cy="1"/>
+				</area>
+			</field>
+		</field>
+	</screen>
+</header>

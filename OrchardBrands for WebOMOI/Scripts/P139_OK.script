@@ -1,0 +1,23 @@
+﻿Option Explicit 
+Global sw2 As Integer 
+Dim screen_found as String
+
+PanelUpdateEnable(0)
+HostScreenSendKey("Enter")
+HostWaitForScreen("(159),(139)",10,screen_found)
+If ScreenIdGet() = "(159)" Then 
+	End 
+EndIf 
+If ScreenIdGet() = "(139)" Then 
+	If sw2 = 0 Then 
+		If (Instr(1,@"@(MESSAGE)@","Coordinate") > 0) And (Trim(@"@RESVNUM@") > "0") Then 
+			HostCursorPut(14,2)
+			HostScreenPutString("14")
+			HostScreenSendKey("ENTER")
+			HostWaitII(10)
+			sw2 = 1
+		EndIf 
+	EndIf 
+EndIf 
+'PanelUpdateEnable(7)
+End 

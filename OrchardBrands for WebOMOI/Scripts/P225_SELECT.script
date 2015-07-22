@@ -1,0 +1,18 @@
+﻿Global Order as OrderStructure
+Global Customer as CustomerStructure
+
+HostScreenSendKey("ENTER")
+HostWaitII(10)
+Order.sNumber = Trim(@"@#1JWNB@")
+Order.sDate = Trim(@"@VPDZDT@")
+Order.sStatus = Trim(@"@#DYFTX@")
+
+Customer.sNumber = Trim(@"@#PZFNB@")
+Customer.sName1 = Trim(@"@#PLZTX@")
+Customer.sName2 = Trim(@"@#PONCD@")
+Customer.sName3 = Trim(@"@#PL0TX@")
+Customer.sStreet = Trim(@"@#PL1TX@")
+Customer.sState = Trim(@"@#PH6ST@")
+Customer.sCity = Trim(@"@#PL5TX@")
+Customer.sPostalCode = Trim(@"@#POOCD@")
+Customer.sCountry = Trim(@"@#PCNCD@")

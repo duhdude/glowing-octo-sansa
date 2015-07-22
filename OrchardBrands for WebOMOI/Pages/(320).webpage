@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2688.1.41" modelVersion="1.0" ?>
+<!-- File created on 2/24/15 5:14 PM from 320.picture -->
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/paneldefinition3_0.xsd">
+  <properties>
+    <title>@(TITLE)@</title>
+    <id>(320)</id>
+    <dimensions x="0" y="0" cx="357" cy="245"/>
+    <panel_type>1</panel_type>
+    <panel_flags>
+      <update_on_host_change/>
+      <leave_sec_active/>
+      <no_zorder/>
+      <dialog_frame/>
+      <remove_popups/>
+      <replace_previous/>
+      <no_titlebar/>
+      <no_systemmenu/>
+    </panel_flags>
+    <general_flags_1>
+      <always_update/>
+    </general_flags_1>
+    <codepage>1252</codepage>
+    <FontColor>
+      <FontStyleName>Text Label</FontStyleName>
+      <ColorBackground>86</ColorBackground>
+    </FontColor>
+    <screen_name>(320)</screen_name>
+  </properties>
+  <menu_bar/>
+  <messages>
+    <message>
+      <host_field>(MESSAGE)</host_field>
+      <message_flags>
+        <clear_after_send_key/>
+      </message_flags>
+    </message>
+  </messages>
+  <controls>
+    <ajax_container>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <dimensions x="0" y="0" cx="357" cy="40"/>
+      <id>CONTAINER1</id>
+      <image_file>Resources\top1.png</image_file>
+      <general_flags_1>
+        <stretched/>
+      </general_flags_1>
+      <ajax_decorator_name>purple</ajax_decorator_name>
+      <controls/>
+    </ajax_container>
+    <ajax_container>
+      <FontColor>
+        <ColorBackground>87</ColorBackground>
+      </FontColor>
+      <dimensions x="0" y="241" cx="357" cy="4"/>
+      <id>CONTAINER2</id>
+      <ajax_decorator_name>purple</ajax_decorator_name>
+      <ajax_opts_layout>
+        <ajax_layout_max_height_not_empty/>
+        <ajax_layout_min_height_not_empty/>
+      </ajax_opts_layout>
+      <ajax_max_height>6</ajax_max_height>
+      <ajax_min_height>4</ajax_min_height>
+      <controls/>
+    </ajax_container>
+    <ajax_label>
+      <dimensions x="6" y="4" cx="258" cy="27"/>
+      <FontColor>
+        <FontStyleName>Title</FontStyleName>
+        <ColorForeground>90</ColorForeground>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL1</id>
+      <title>@(TITLE)@</title>
+    </ajax_label>
+    <ajax_label>
+      <title>@(MESSAGE)@</title>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+      </general_flags_2>
+      <general_flags_1/>
+      <color_conversion>1</color_conversion>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+      </ajax_opts_common>
+      <field_format/>
+      <ajax_opts_layout>
+        <ajax_layout_max_height_not_empty/>
+        <ajax_layout_min_height_not_empty/>
+      </ajax_opts_layout>
+      <id>LABEL13</id>
+      <FontColor>
+        <FontStyleName>Message</FontStyleName>
+        <ColorForeground>69</ColorForeground>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_min_height>20</ajax_min_height>
+      <ajax_max_height>20</ajax_max_height>
+      <dimensions x="4" y="214" cx="343" cy="20"/>
+    </ajax_label>
+    <ajax_tool_bar>
+      <dimensions x="0" y="41" cx="357" cy="24"/>
+      <id>TOOLBAR1</id>
+      <ajax_opts_layout>
+        <ajax_layout_max_height_not_empty/>
+      </ajax_opts_layout>
+      <ajax_max_height>24</ajax_max_height>
+      <ajax_tool_bar_spacer>
+        <id>TOOLBAR_SPACER1</id>
+      </ajax_tool_bar_spacer>
+      <ajax_tool_bar_button>
+        <dimensions cx="27"/>
+        <FontColor>
+          <ColorBackground>50</ColorBackground>
+        </FontColor>
+        <field_flags>
+          <tab_stop/>
+        </field_flags>
+        <id>TOOLBAR_BUTTON1</id>
+        <ajax_show>2</ajax_show>
+        <image_file>Resources\help2.gif</image_file>
+        <panel_next>APPINFO</panel_next>
+        <help_text>Application Information</help_text>
+        <shortcut>0</shortcut>
+        <ajax_center>1</ajax_center>
+      </ajax_tool_bar_button>
+    </ajax_tool_bar>
+    <ajax_label>
+      <general_flags_2>
+        <visibility_equal_hide/>
+      </general_flags_2>
+      <title>@ORDE@</title>
+      <dimensions x="21" y="75" cx="135" cy="24"/>
+      <general_flags_1>
+        <always_update/>
+      </general_flags_1>
+      <general_flags_3/>
+      <color_conversion>0</color_conversion>
+      <FontColor>
+        <FontStyleName>Text Label2</FontStyleName>
+        <ColorForeground>77</ColorForeground>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opts_layout>
+        <ajax_layout_max_height_not_empty/>
+        <ajax_layout_min_height_not_empty/>
+      </ajax_opts_layout>
+      <ajax_max_height>24</ajax_max_height>
+      <ajax_min_height>24</ajax_min_height>
+      <id>LABEL4</id>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="160" y="75" cx="83" cy="24"/>
+      <title>@#1JWNB@</title>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+      </general_flags_2>
+      <general_flags_1>
+        <right_aligned/>
+      </general_flags_1>
+      <color_conversion>1</color_conversion>
+      <FontColor>
+        <FontStyleName>Output Field - Numeric</FontStyleName>
+        <ColorForeground>63</ColorForeground>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opts_layout>
+        <ajax_layout_max_height_not_empty/>
+        <ajax_layout_min_height_not_empty/>
+      </ajax_opts_layout>
+      <ajax_max_height>26</ajax_max_height>
+      <ajax_min_height>24</ajax_min_height>
+      <id>LABEL5</id>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+        <ajax_enable_right_mouse_menu/>
+        <ajax_selectable/>
+        <ajax_native_context_menu/>
+      </ajax_opts_common>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="247" y="75" cx="38" cy="24"/>
+      <title>@#PJXNB@</title>
+      <general_flags_2>
+        <visibility_not_present_hide/>
+      </general_flags_2>
+      <general_flags_1>
+        <right_aligned/>
+      </general_flags_1>
+      <color_conversion>1</color_conversion>
+      <FontColor>
+        <FontStyleName>Output Field - Numeric</FontStyleName>
+        <ColorForeground>63</ColorForeground>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opts_layout>
+        <ajax_layout_max_height_not_empty/>
+        <ajax_layout_min_height_not_empty/>
+      </ajax_opts_layout>
+      <ajax_max_height>26</ajax_max_height>
+      <ajax_min_height>24</ajax_min_height>
+      <id>LABEL6</id>
+      <ajax_opts_common>
+        <ajax_enable_host_condition/>
+        <ajax_enable_right_mouse_menu/>
+        <ajax_selectable/>
+        <ajax_native_context_menu/>
+      </ajax_opts_common>
+    </ajax_label>
+    <ajax_button>
+      <dimensions x="17" y="105" cx="321" cy="43"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <ajax_opacity>100</ajax_opacity>
+      <id>BUTTON1</id>
+      <ajax_decorator_name/>
+      <ajax_show>1</ajax_show>
+      <image_file/>
+      <FontColor>
+        <FontStyleName>Push Button4</FontStyleName>
+        <ColorForeground>66</ColorForeground>
+        <ColorBackground>92</ColorBackground>
+      </FontColor>
+      <send_key>0</send_key>
+      <help_text>@&amp;&amp;btn102@</help_text>
+      <general_flags_2>
+        <default/>
+      </general_flags_2>
+      <title>Cancel the Order</title>
+      <ajax_center>1</ajax_center>
+      <Events>
+        <Event>
+          <Type>OnCommand</Type>
+          <ScriptCall>P102_CANCEL</ScriptCall>
+        </Event>
+      </Events>
+    </ajax_button>
+    <ajax_button>
+      <dimensions x="17" y="158" cx="321" cy="43"/>
+      <field_flags>
+        <tab_stop/>
+      </field_flags>
+      <ajax_opacity>100</ajax_opacity>
+      <id>BACK</id>
+      <ajax_decorator_name/>
+      <ajax_show>1</ajax_show>
+      <image_file/>
+      <FontColor>
+        <FontStyleName>Push Button4</FontStyleName>
+        <ColorForeground>66</ColorForeground>
+        <ColorBackground>92</ColorBackground>
+      </FontColor>
+      <send_key>15</send_key>
+      <help_text>Return to the Order</help_text>
+      <title>Abort the Cancel</title>
+      <ajax_center>1</ajax_center>
+      <shortcut>10</shortcut>
+    </ajax_button>
+  </controls>
+</panel>

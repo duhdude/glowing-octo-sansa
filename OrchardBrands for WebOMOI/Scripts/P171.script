@@ -1,0 +1,3 @@
+﻿If Mode1 = "M" Then 
+	PanelLoadPanel("(171)B")
+EndIf 

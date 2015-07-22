@@ -1,0 +1,11 @@
+﻿Rem
+Rem Script file
+Rem
+Rem This script will make the Username visible trough the LMC
+Rem
+Option Explicit
+Global user as string
+user = @"@FLD06053@"
+SessionValueSet("Username", @"@FLD06053@")
+HostScreenSendKey("Enter")
+End

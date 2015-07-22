@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?VersionInfo version="1.1" buildnumber="7.0.181" exename="lscollector.exe" exeversion="7.0.181.0" ?>
+<header xmlns="http://www.seagullsoftware.com/schemas/legasuite/screendefinition" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.seagullsoftware.com/schemas/legasuite/screendefinition1_1.xsd" layout_version="1.1" creation_date_time="2015-01-15T12:34:04" application="collector" application_version="7.0.181.0">
+	<screen originator="LegaSuiteCollectorAwhost" name="AW000162" library="SEADSPF   " member_name="NRE00106# " message_line_y="7">
+		<size cx="80" cy="24"/>
+		<action key="f3"/>
+		<action key="f12"/>
+		<action key="enter"/>
+		<field field_type="window" window_type="fixed_position_generated_border">
+			<area>
+				<position x="4" y="4"/>
+				<size cx="69" cy="10"/>
+			</area>
+			<window_border border_characters="        " reverse_image="true"/>
+			<field field_type="window_border">
+				<field field_type="fixed_text" value="                                                                     " data_length="69" display_length="69" reverse_image="true">
+					<area>
+						<position x="0" y="0"/>
+						<size cx="69" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="1"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="68" y="1"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="2"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="68" y="2"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="3"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="68" y="3"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="4"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="68" y="4"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="5"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="68" y="5"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="6"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="68" y="6"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="7"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="68" y="7"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="0" y="8"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value=" " data_length="1" display_length="1" reverse_image="true">
+					<area>
+						<position x="68" y="8"/>
+						<size cx="1" cy="1"/>
+					</area>
+				</field>
+				<field field_type="fixed_text" value="                                                                     " data_length="69" display_length="69" reverse_image="true">
+					<area>
+						<position x="0" y="9"/>
+						<size cx="69" cy="1"/>
+					</area>
+				</field>
+			</field>
+			<field field_type="screen_part" name="SCREEN    " overlay="single">
+				<area>
+					<position x="0" y="3"/>
+					<size cx="69" cy="4"/>
+				</area>
+				<field field_type="field" data_type="alphanumeric" usage="output" blink="true" name="LINE1     " display_length="60" data_length="60">
+					<area>
+						<position x="6" y="0"/>
+						<size cx="60" cy="1"/>
+					</area>
+					<color foreground="red"/>
+				</field>
+				<field field_type="field" data_type="alphanumeric" usage="output" blink="true" name="LINE2     " display_length="60" data_length="60">
+					<area>
+						<position x="6" y="1"/>
+						<size cx="60" cy="1"/>
+					</area>
+					<color foreground="red"/>
+				</field>
+				<field field_type="field" data_type="alphanumeric" usage="output" blink="true" name="LINE3     " display_length="60" data_length="60">
+					<area>
+						<position x="6" y="2"/>
+						<size cx="60" cy="1"/>
+					</area>
+					<color foreground="red"/>
+				</field>
+			</field>
+			<field field_type="screen_part">
+				<field field_type="fixed_text" display_length="25" data_length="25" value="Press &lt;Enter&gt; to Continue">
+					<area>
+						<position x="6" y="7"/>
+						<size cx="25" cy="1"/>
+					</area>
+				</field>
+				<field field_type="field" conditional="true" data_type="alphanumeric" usage="output" high_intensity="true" name=".SFLMSGREC" display_length="65" data_length="65">
+					<area>
+						<position x="2" y="8"/>
+						<size cx="65" cy="1"/>
+					</area>
+				</field>
+			</field>
+		</field>
+	</screen>
+</header>

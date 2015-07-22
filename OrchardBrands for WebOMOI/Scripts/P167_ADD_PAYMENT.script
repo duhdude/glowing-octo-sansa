@@ -1,0 +1,23 @@
+﻿Dim svtype As String 
+Dim clr As Integer 
+PanelUpdateEnable(0)
+svtype=""
+svtype = @"@#2K2NB@"
+HostScreenSendKey("ENTER")
+HostWaitII(5)
+If svtype = "51" Then 
+	Goto end_script
+EndIf 
+HostFieldGetProp("#2P6CD",5,clr)
+If clr <> 9 Then 
+	HostFieldGetProp("#2D6DT",5,clr)
+EndIf 
+'messagebox("",str(clr),4,0)
+If clr = 9 Then 
+	HostFieldPutData("#2K2NB",0,svtype)
+Else 
+	HostFieldPutData("#2K2NB",0,"  ")
+EndIf 
+end_script: 
+PanelUpdateEnable(7)
+End 

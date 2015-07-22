@@ -1,0 +1,11 @@
+﻿PanelUpdateEnable(0)
+'PanelLock()
+discamt=""
+HostScreenSendKey("F6")
+HostWaitII(5)
+shipcmplt = "N"
+giftchk="N"
+'PanelUnlock()
+'PanelUpdateEnable(5)
+
+End

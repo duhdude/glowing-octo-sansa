@@ -1,0 +1,103 @@
+﻿'Script being called from the next pages
+'(139) (160) (196)
+
+Global Totals As TotalsStructure
+from139 = "yes"
+PanelUpdateEnable(0)
+Dim fld1a,fld1b,fld2a,fld2b,fld3a,fld3b,fld4a,fld4b,fld5a,fld5b,fld6a,fld6b,fld7a,fld7b As String 
+If ScreenIdGet() <> "(170)" Then 
+	HostScreenSendKey("F17")
+	HostWaitII(10)
+	If (ScreenIdGet() = "(160)") Or (ScreenIdGet() = "(190)") Then 
+		PanelUpdateEnable(7)
+		End 
+	EndIf 
+EndIf 
+
+'GetTotals
+merch = @"@#CLNVA@"
+tax = @"@#CLPVA@"
+hand = @"@#CLQVA@"
+ship = @"@#CLOVA@"
+ship2 = @"@#CL2VA@"
+char = @"@#CLRVA@"
+tot = @"@#CIFVA@"
+
+'Totals.sMerchendise = Left(Spaces & Format(@"@#CLNVA@", "########0.00-"),20)
+'Totals.sTax = Left(Spaces & Format(@"@#CLPVA@", "########0.00-"),20)
+'Totals.sHandling = Left(Spaces & Format(@"@#CLQVA@", "########0.00-"),20)
+'Totals.sShipping = Left(Spaces & Format(@"@#CLOVA@", "########0.00-"),20)
+'Totals.sShippingPlus = Left(Spaces & Format(@"@#CL2VA@", "########0.00-"),20)
+'Totals.sCharge = Left(Spaces & Format(@"@#CLRVA@", "########0.00-"),20)
+'Totals.sTotal = Left(Spaces & Format(@"@#CIFVA@", "########0.00-"),20)
+
+HostScreenSendKey("F3")
+HostWaitII(10)
+
+If mode1 = "M" Then 
+	Goto end_script
+EndIf 
+
+HostScreenSendKey("F9")
+HostWaitII(10)
+If (ScreenIdGet() = "(160)") Or (ScreenIdGet() = "(190)") Then 
+	PanelUpdateEnable(7)
+	End 
+EndIf 
+If (ScreenIdGet() = "(252)") Or (ScreenIdGet() = "(240)") Then 
+	End 
+EndIf 
+addrmsg = ""
+fld1a = @"@#PPNTX@"
+fld1b = @"@#DTDTX@"
+
+fld2a = @"@#PL1TX@"
+fld2b = @"@#DOZTX@"
+
+fld3a = @"@#PL2TX@"
+fld3b = @"@#DTETX@"
+
+fld4a = @"@#PL5TX@"
+fld4b = @"@#DTFTX@"
+
+fld5a = @"@#PH6ST@"
+fld5b = @"@#DMGST@"
+
+fld6a = @"@#PCNCD@"
+fld6b = @"@#DZGCD@"
+
+fld7a = @"@#POOCD@"
+fld7b = @"@#DZFCD@"
+
+If fld1a <> fld1b Then 
+	Goto get_addr
+EndIf 
+If fld2a <> fld2b Then 
+	Goto get_addr
+EndIf 
+If fld3a <> fld3b Then 
+	Goto get_addr
+EndIf 
+If fld4a <> fld4b Then 
+	Goto get_addr
+EndIf 
+If fld5a <> fld5b Then 
+	Goto get_addr
+EndIf 
+If fld6a <> fld6b Then 
+	Goto get_addr
+EndIf 
+If fld7a <> fld7b Then 
+	Goto get_addr
+EndIf 
+Goto end_script
+
+get_addr: 
+addrmsg = "Ship to Address:  " + fld1b + "   " + fld2b + "   " + fld3b
+addrmsg = addrmsg + "   " + fld4b + "   " + fld5b + "   " + fld6b + "   " + fld7b
+
+end_script: 
+HostScreenSendKey("F15")
+HostWaitII(10)
+PanelUpdateEnable(3)
+End 

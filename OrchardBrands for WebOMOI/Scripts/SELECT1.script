@@ -1,0 +1,8 @@
+﻿PanelLock()
+PanelUpdateEnable(0)
+HostScreenSendKey("ENTER")
+HostWaitII(10)
+PanelUnlock()
+PanelUpdateEnable(5)
+End 
+

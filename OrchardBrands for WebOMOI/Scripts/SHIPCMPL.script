@@ -1,0 +1,13 @@
+﻿PanelLock()
+PanelUpdateEnable(0)
+HostScreenSendKey("F21")
+HostWaitII(10)
+If ScreenIdGet() = "(199)" Then 
+	HostFieldPutData("#1JNST",0,shipcmplt)
+	HostScreenSendKey("Enter")
+	HostWaitII(10)
+EndIf 
+PanelUnlock()
+PanelUpdateEnable(7)
+End 
+

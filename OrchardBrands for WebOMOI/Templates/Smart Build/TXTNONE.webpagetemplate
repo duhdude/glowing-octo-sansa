@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2543.1.24" modelVersion="1.0" ?>
+<panel xmlns="http://www.seagullsoftware.com/schemas/legasuite/panel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.seagullsoftware.com/schemas/legasuite/panel http://www.seagullsoftware.com/schemas/legasuite/paneldefinition3_0.xsd">
+  <properties>
+    <title>Texts without special meaning</title>
+    <id>TXTNONE</id>
+    <dimensions x="0" y="0" cx="920" cy="631"/>
+    <panel_flags>
+      <update_on_host_change/>
+      <size_independent/>
+      <no_zorder/>
+    </panel_flags>
+    <FontColor>
+      <FontStyleName>Text Label</FontStyleName>
+    </FontColor>
+  </properties>
+  <controls>
+    <ajax_label>
+      <dimensions x="13" y="110" cx="69" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL3</id>
+      <title>Apt/Suite</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="90" cx="57" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL4</id>
+      <title>(H,B,F)</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="70" cx="52" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL5</id>
+      <title>(1,2,3)</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="270" cx="142" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL1</id>
+      <title>Hold/Bypass/Fraud</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="130" cx="89" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL2</id>
+      <title>(B,R,C,L,S)</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="150" cx="103" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL6</id>
+      <title>(E,G,N,P,R,T)</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="250" cx="137" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL7</id>
+      <title>Number, F4 for list</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="190" cx="120" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL8</id>
+      <title>Code, F4 for list</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="230" cx="134" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL9</id>
+      <title>(T=Text, H=HTML)</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="210" cx="129" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL10</id>
+      <title>(O1, O2, O3, O4)</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="350" cx="468" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL11</id>
+      <title>(CE=Cust Email,OE=Order Entry,CM=Cust Maint,CA=Cust API)</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="170" cx="121" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL12</id>
+      <title>Value, F4 for list</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="330" cx="316" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL13</id>
+      <title>CC/C   ------------- D e p o s i t --------------</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="30" cx="42" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL14</id>
+      <title>(B,R)</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="10" cx="33" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL15</id>
+      <title>G/M</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="50" cx="48" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL16</id>
+      <title>G/M%</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="310" cx="210" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL17</id>
+      <title>(D/E/F)</title>
+    </ajax_label>
+    <ajax_label>
+      <dimensions x="13" y="290" cx="210" cy="16"/>
+      <FontColor>
+        <ColorBackground>50</ColorBackground>
+      </FontColor>
+      <ajax_opacity>100</ajax_opacity>
+      <id>LABEL18</id>
+      <title>(B=Business, R=Residence)</title>
+    </ajax_label>
+  </controls>
+</panel>

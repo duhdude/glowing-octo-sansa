@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2621.0.0" modelVersion="1.0" ?>
+<OisObject>
+   <ScriptCall function="P159"/>
+   <Filters>
+      <Filter>CreateHidden</Filter>
+      <Filter>Command</Filter>
+   </Filters>
+   <Description>P159</Description>
+</OisObject>

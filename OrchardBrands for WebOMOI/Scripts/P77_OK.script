@@ -1,0 +1,20 @@
+﻿PanelUpdateEnable(0)
+discamt = ""
+If (Trim(pcode2) = "") And (Trim(last2) = "") Then 
+	HostScreenSendKey("ENTER")
+	HostWaitII(5)
+	HostCursorPut(3,13)
+	'	PanelUpdateEnable(7)
+	End 
+Else 
+	HostScreenSendKey("F4")
+	HostWaitII(5)
+	HostFieldPutData("#1OOCD",0,pcode2)
+	HostFieldPutData("#1L0TX",0,last2)
+	HostScreenSendKey("ENTER")
+	HostWaitII(5)
+	pcode2 = ""
+	last2 = ""
+	'	PanelUpdateEnable(7)
+EndIf 
+End 

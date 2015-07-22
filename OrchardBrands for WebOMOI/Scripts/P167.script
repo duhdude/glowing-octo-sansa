@@ -1,0 +1,5 @@
+﻿If from139 = "yes" Then 
+	HostFieldPutData("#2K2NB",0,"01")
+	from139 = ""
+EndIf 
+End 
