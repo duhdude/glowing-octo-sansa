@@ -1,5 +1,0 @@
-﻿HostScreenSendKey("ENTER")
-HostWaitII(5)
-HostScreenSendKey("F23")
-HostWaitII(5)
-End

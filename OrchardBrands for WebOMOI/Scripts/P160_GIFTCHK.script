@@ -1,4 +1,0 @@
-﻿HostScreenSendKey("ENTER")
-HostWaitII(5)
-HostFieldPutData("#1JLST",0,giftchk)
-End 

@@ -1,8 +1,0 @@
-﻿PanelUpdateEnable(0)
-HostScreenSendKey("F5")
-HostWaitII(5)
-If ScreenIdGet() = "(171)" Then 
-	HostScreenSendKey("F3")
-	HostWaitII(5)
-EndIf 
-End

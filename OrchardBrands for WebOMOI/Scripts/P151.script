@@ -1,9 +1,0 @@
-﻿Dim screen_found As String 
-
-PanelUpdateEnable(0)
-PanelLock()
-HostScreenSendKey("F15")
-HostWaitForScreen("(167)", 10, screen_found) 'Enter Payment Method
-PanelUnlock()
-'PanelUpdateEnable(7)
-End 

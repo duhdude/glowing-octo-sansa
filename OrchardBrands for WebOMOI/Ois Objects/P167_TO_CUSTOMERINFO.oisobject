@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2681.0.0" modelVersion="1.0" ?>
-<OisObject>
-   <ScriptCall function="P167_TO_CUSTOMERINFO"/>
-   <Filters>
-      <Filter>Command</Filter>
-   </Filters>
-   <Description>P167_To_CUSTOMERINFO</Description>
-</OisObject>

@@ -1,8 +1,0 @@
-﻿PanelUpdateEnable(0)
-HostScreenSendKey("F3")
-HostWaitII(5)
-HostFieldPutData("#CASCD",0,"OIOM")
-HostScreenSendKey("ENTER")
-HostWaitII(5)
-PanelUpdateEnable(2)
-End

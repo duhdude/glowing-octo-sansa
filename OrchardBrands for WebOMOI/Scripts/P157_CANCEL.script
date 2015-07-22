@@ -1,7 +1,0 @@
-﻿HostScreenSendKey("F12")
-HostWaitII(10)
-If ScreenIdGet() = "(157)" Then 
-	HostScreenSendKey("F12")
-	HostWaitII(10)
-EndIf 
-End

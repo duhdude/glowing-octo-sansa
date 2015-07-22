@@ -1,7 +1,0 @@
-﻿sw4=1
-PanelUpdateEnable(0)
-HostScreenSendKey("F7")
-HostWaitII(10)
-HostScreenSendKey("F14")
-HostWaitII(10)
-End

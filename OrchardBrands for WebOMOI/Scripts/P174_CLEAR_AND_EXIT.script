@@ -1,4 +1,0 @@
-﻿HostFieldPutData("#1OCDP",0,"       ")
-HostScreenSendKey("ENTER")
-HostWaitII(10)
-End

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2681.0.0" modelVersion="1.0" ?>
-<OisObject>
-   <ScriptCall function="protect"/>
-   <Filters>
-      <Filter>Command</Filter>
-   </Filters>
-</OisObject>

@@ -1,8 +1,0 @@
-﻿PanelUpdateEnable(0)
-HostScreenSendKey("F10")
-HostWaitII(5)
-HostFieldPutData("#DOTB",0,"1")
-HostScreenSendKey("ENTER")
-HostWaitII(5)
-
-End

@@ -1,6 +1,0 @@
-﻿PanelUpdateEnable(0)
-HostScreenSendKEy("F23")
-HostWaitii(10)
-PanelUpdateEnable(7)
-End
-

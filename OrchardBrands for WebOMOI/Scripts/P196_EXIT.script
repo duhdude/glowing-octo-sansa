@@ -1,8 +1,0 @@
-﻿PanelUpdateEnable(0)
-HostScreenSendKey("F3")
-HostWaitII(10)
-If sw4 = 1 Then 
-	sw4 = 0
-	ScriptCall("ToPayment1")
-EndIf 
-End 

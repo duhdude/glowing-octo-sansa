@@ -1,4 +1,0 @@
-﻿scankey="F2"
-HostScreenSendKey("F2")
-HostWaitII(5)
-End

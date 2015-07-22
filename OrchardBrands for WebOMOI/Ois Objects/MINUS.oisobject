@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?VersionInfo exeName="LegaSuite.exe" exeVersion="7.2653.0.0" modelVersion="1.0" ?>
-<OisObject>
-   <ScriptCall function="MINUS"/>
-   <Filters>
-      <Filter>Command</Filter>
-   </Filters>
-   <Description>Minus</Description>
-</OisObject>
